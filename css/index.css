@@ -74,6 +74,8 @@ footer {
 ul,ol { 
     list-style-type: none;
     color: var(--ligth-font-solid);
+    display: flex;
+    justify-content: space-between;
 }
 
 p {
