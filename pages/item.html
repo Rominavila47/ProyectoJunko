@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunkoShop</title>
+    <link rel="icon" type="image/x-icon" href="../img/branding/isotype.svg">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
@@ -30,8 +31,8 @@
                 <h2>BABY YODA BLUEBALL</h2>
                 <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
                 <p>$ 1799,99</p>
-                <!--cajita de cantidad -->
-                <a href="../pages/car.html">Agregar al Carrito</a> <!--botón rojo-->
+                <input type="number" id="cantidad" name="cantidad" min="1" max="100" step="1" value="0" autofocus required>
+                <a href="../pages/car.html"><button>Agregar al Carrito</button></a> <!--botón rojo-->
                 <a href="">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
             </article>
             
@@ -47,6 +48,9 @@
                             <picture>
                                 <img src="../img/star-wars/trooper-1.webp" alt="Figura coleccionable del Storm Trooper">
                             </picture>
+                            <div>
+                                <h3>NUEVO</h3>
+                            </div>
                             <div>
                                 <p>STAR WARS</p>
                                 <h3>Stormtrooper Lightsaber</h3>
@@ -64,6 +68,9 @@
                                 <img src="../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable del Pidgeotto">
                             </picture>
                             <div>
+                                <h3>NUEVO</h3>
+                            </div>
+                            <div>
                                 <p>POKEMON</p>
                                 <h3>Pidgeotto</h3>
                                 <p>$ 13500</p>
@@ -79,6 +86,9 @@
                             <picture>
                                 <img src="../img/harry-potter/luna-1.webp" alt="Figura coleccionable de Luna lovegood">
                             </picture>
+                            <div>
+                                <h3>NUEVO</h3>
+                            </div>
                             <div>
                                 <p>HARRY POTTER</p>
                                 <h3>Luna</h3>
@@ -101,10 +111,7 @@
                         <a href="../shop.html">SHOP</a>
                     </li>
                     <li>
-                        <a href="../pages/register.html">REGISTRARSE</a>
-                    </li>
-                    <li>
-                        <a href="../pages/login.html">LOGIN</a>
+                        <a href="../pages/register.html">INGRESAR</a>
                     </li>
                     <li>
                         <a href="../pages/contact.html">CONTACTO</a>
@@ -115,7 +122,7 @@
                 </picture>
             </nav>
         </section>
-        <p>Todos los derechos reservados 2023</p>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>  <!--Final del footer-->
 </body>
 </html>

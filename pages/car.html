@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunkoShop</title>
+    <link rel="icon" type="image/x-icon" href="../img/branding/isotype.svg">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
@@ -24,13 +25,15 @@
         </nav>
     </header> <!--Final del header-->
     <main>
-        <section> 
-            <h2>CARRITO DE COMPRAS</h2>
+        <section> <!--hacerle el subrayado en ccs-->
+            <h1>CARRITO DE COMPRAS</h1>
         </section>
         <section> <!--caption de lista de articulos seleccionados-->
-            <article>
-                
-            </article>
+            <div>
+                <h3>DETALLE DE PRODUCTO</h3>
+                <h3>CANTIDAD</h3>
+                <h3>TOTAL</h3>
+            </div>
         </section>
         <section><!--lista de articulos seleccionados-->
             <ul>
@@ -45,10 +48,17 @@
                             <p>precio: $ 1799,99</p>
                         </div>          
                         <div><!--contador-->
+                            <form>
+                                <label for="cantidad">Cantidad:</label> <!--hacer invisible en css-->
+                                <input type="number" id="cantidad" name="cantidad" min="1" max="100" step="1" value="1" autofocus required>
+                            </form>
                         </div>
                         <div><!--sumatoria-->
+                            <h3>$</h3>
+                            <h3>1799,99</h3>
                         </div>
                         <div><!--botón de eliminar circulo rojo-->
+                            <img src="../img/icons/delete_trash.svg" alt="eliminar funko seleccionado" color="red">
                         </div>
                     </article>
                 </li>
@@ -64,21 +74,47 @@
                         </div>           
                         </div>          
                         <div><!--contador-->
+                            <form>
+                                <label for="cantidad1">Cantidad:</label> <!--hacer invisible en css-->
+                                <input type="number" id="cantidad1" name="cantidad" min="1" max="100" step="1" value="1" autofocus required>
+                            </form>
                         </div>
                         <div><!--sumatoria-->
+                            <h3>$</h3>
+                            <h3>1799,99</h3>
                         </div>
                         <div><!--botón de eliminar circulo rojo-->
+                            <img src="../img/icons/delete_trash.svg" alt="eliminar funko seleccionado">
                         </div>  
                     </article>
                 </li>  
             </ul>    
         </section>
         <section>             
-            <h2>RESUMEN</h2>
-            <article>
-                 <!--tabla resumen-->
+            <h2>RESUMEN</h2><!--hacerle el subrayado en ccs-->
+            <article><!--tabla resumen-->
+                <div>
+                    <h3>CANTIDAD DE ELEMENTOS</h3>
+                    <p>3</p>
+                </div>
+                <div>
+                    <h3>SUBTOTAL</h3>
+                    <p>$5.399,97</p>
+                </div>
+                <div>
+                    <h3>ENVIO</h3>
+                    <p>$0,00</p>
+                </div>
+                <div> <!--agregar margen superior en ccs-->
+                    <h3><strong>TOTAL</strong></h3>
+                    <p>$5.399,97</p>
+                </div>
             </article>
-            <a href="">IR A PAGAR</a>
+            <div> <!--boton de pagar-->
+                <form action=".JS">
+                    <a href=""><input type="button" value="IR A PAGAR"></a>
+                </form>
+            </div>
         </section>
     </main> 
     <footer>  <!--Inicio del footer-->
@@ -89,10 +125,7 @@
                         <a href="../shop.html">SHOP</a>
                     </li>
                     <li>
-                        <a href="../pages/register.html">REGISTRARSE</a>
-                    </li>
-                    <li>
-                        <a href="../pages/login.html">LOGIN</a>
+                        <a href="../pages/register.html">INGRESAR</a>
                     </li>
                     <li>
                         <a href="../pages/contact.html">CONTACTO</a>
@@ -103,7 +136,7 @@
                 </picture>
             </nav>
         </section>
-        <p>Todos los derechos reservados 2023</p>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>  <!--Final del footer-->
 </body>
 </html>
