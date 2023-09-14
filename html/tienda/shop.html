@@ -4,28 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunkoShop</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" type="image/x-icon" href="../../img/branding/isotype.svg">
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
     <header><!--Inicio del header-->
         <nav>
             <picture>
-                <a href="../index.html">
-                <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca"></a>
+                <a href="../tienda/index.html">
+                <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca"></a>
             </picture>
            <ul>
-                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="../tienda/shop.html">SHOP</a></li>
                 <li><a href="../pages/contacto.html">CONTACTO</a></li>
-                <li><a href="../pages/login.html">LOGIN</a></li>
-                <li><a href="car.html">
-                <img src="../img/icons/cart-icon.svg" alt="Carrito de compras"></a>
+                <li><a href="../admin/login.html">LOGIN</a></li>
+                <li><a href="../tienda/car.html">
+                <img src="../../img/icons/cart-icon.svg" alt="Carrito de compras"></a>
                 </li>
            </ul>        
         </nav>
     </header> <!--Final del header-->
     <main>
         <section> <!--BUSCADOR -->
-            
+            <form>
+                <label for="search">BUSCAR</label>
+                <input type="text" id="search" nombre="search" placeholder="ítem o categoría">
+                <label for="sort">ORDENAR POR</label>
+                <select id="sort" nombre="sort" placeholder="mayor y menor">
+                    <option value="menor precio">menor precio</option>
+                    <option value="mayor precio">mayor precio</option>
+                    <option value="más relevantes">más relevantes</option>
+                </select>
+                <h3>PRECIO</h3>
+                <label for="min">MIN</label>
+                <input type="number" id="min" nombre="min" placeholder="0">
+                <label for="max">- MAX</label>
+                <input type="number" id="max" nombre="max" placeholder="0">
+                <h3>FILTRAR</h3>
+                <label for="nuevos">NUEVOS</label>
+                <input type="checkbox" id="nuevos" name="nuevos" value="">
+                <label for="ofertas">OFERTAS</label>
+                <input type="checkbox" id="ofertas" name="ofertas" value="">
+                <label for="edic">EDICIÓN ESPECIAL</label>
+                <input type="checkbox" id="edic" name="edic" value="">
+                <label for="fav">FAVORITOS</label>
+                <input type="checkbox" id="fav" name="fav" value="">
+            </form>
         </section>
         <section><!--PRODUCTOS 3*3-->
             <ul>
@@ -33,7 +57,7 @@
                     <article>
                         <a href="">
                             <picture>
-                                <img src="../img/star-wars/trooper-1.webp" alt="Figura coleccionable del Storm Trooper">
+                                <img src="../../img/star-wars/trooper-1.webp" alt="Figura coleccionable del Storm Trooper">
                             </picture>
                             <div>
                                 <p>STAR WARS</p>
@@ -49,7 +73,7 @@
                     <article>
                         <a href="">
                             <picture>
-                                <img src="../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable del Pidgeotto">
+                                <img src="../../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable del Pidgeotto">
                             </picture>
                             <div>
                                 <p>POKEMON</p>
@@ -65,7 +89,7 @@
                     <article>
                         <a href="">
                             <picture>
-                                <img src="../img/harry-potter/luna-1.webp" alt="Figura coleccionable de Luna lovegood">
+                                <img src="../../img/harry-potter/luna-1.webp" alt="Figura coleccionable de Luna lovegood">
                             </picture>
                             <div>
                                 <p>HARRY POTTER</p>
@@ -81,7 +105,7 @@
                     <article>
                         <a href="">
                             <picture>
-                                <img src="../img/star-wars/trooper-1.webp" alt="Figura coleccionable del Storm Trooper">
+                                <img src="../../img/star-wars/trooper-1.webp" alt="Figura coleccionable del Storm Trooper">
                             </picture>
                             <div>
                                 <p>STAR WARS</p>
@@ -97,7 +121,7 @@
                     <article>
                         <a href="">
                             <picture>
-                                <img src="../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable del Pidgeotto">
+                                <img src="../../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable del Pidgeotto">
                             </picture>
                             <div>
                                 <p>POKEMON</p>
@@ -113,7 +137,7 @@
                     <article>
                         <a href="">
                             <picture>
-                                <img src="../img/harry-potter/luna-1.webp" alt="Figura coleccionable de Luna lovegood">
+                                <img src="../../img/harry-potter/luna-1.webp" alt="Figura coleccionable de Luna lovegood">
                             </picture>
                             <div>
                                 <p>HARRY POTTER</p>
@@ -129,7 +153,7 @@
                     <article>
                         <a href="">
                             <picture>
-                                <img src="../img/star-wars/trooper-1.webp" alt="Figura coleccionable del Storm Trooper">
+                                <img src="../../img/star-wars/trooper-1.webp" alt="Figura coleccionable del Storm Trooper">
                             </picture>
                             <div>
                                 <p>STAR WARS</p>
@@ -145,7 +169,7 @@
                     <article>
                         <a href="">
                             <picture>
-                                <img src="../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable del Pidgeotto">
+                                <img src="../../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable del Pidgeotto">
                             </picture>
                             <div>
                                 <p>POKEMON</p>
@@ -161,7 +185,7 @@
                     <article>
                         <a href="">
                             <picture>
-                                <img src="../img/harry-potter/luna-1.webp" alt="Figura coleccionable de Luna lovegood">
+                                <img src="../../img/harry-potter/luna-1.webp" alt="Figura coleccionable de Luna lovegood">
                             </picture>
                             <div>
                                 <p>HARRY POTTER</p>
@@ -184,24 +208,21 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="shop.html">SHOP</a>
+                        <a href="../tienda/shop.html">SHOP</a>
                     </li>
                     <li>
-                        <a href="../pages/register.html">REGISTRARSE</a>
-                    </li>
-                    <li>
-                        <a href="../pages/login.html">LOGIN</a>
+                        <a href="../admin/login.html">INGRESAR</a>
                     </li>
                     <li>
                         <a href="../pages/contact.html">CONTACTO</a>
                     </li>                                       
                 </ul>
                 <picture>
-                    <img src="../img/branding/isotype.svg" alt="Imagen de Isologotipo">
+                    <img src="../../img/branding/isotype.svg" alt="Imagen de Isologotipo">
                 </picture>
             </nav>
         </section>
-        <p>Todos los derechos reservados 2023</p>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>  <!--Final del footer-->
 </body>
 </html>

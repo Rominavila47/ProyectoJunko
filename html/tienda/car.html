@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunkoShop</title>
+    <link rel="icon" type="image/x-icon" href="../../img/branding/isotype.svg">
+    <link rel="stylesheet" href="../../css/index.css">
+</head>
+<body>
+    <header><!--Inicio del header-->
+        <nav>
+            <picture>
+                <a href="../tienda/index.html">
+                <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca"></a>
+            </picture>
+           <ul>
+                <li><a href="../tienda/shop.html">SHOP</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
+                <li><a href="../admin/login.html">LOGIN</a></li>
+                <li><a href="../tienda/car.html">
+                <img src="../../img/icons/cart-icon.svg" alt="Carrito de compras"></a>
+                </li>
+           </ul>        
+        </nav>
+    </header> <!--Final del header-->
+    <main>
+        <section> <!--hacerle el subrayado en ccs-->
+            <h1>CARRITO DE COMPRAS</h1>
+        </section>
+        <section> <!--caption de lista de articulos seleccionados-->
+            <div>
+                <h3>DETALLE DE PRODUCTO</h3>
+                <h3>CANTIDAD</h3>
+                <h3>TOTAL</h3>
+            </div>
+        </section>
+        <section><!--lista de articulos seleccionados-->
+            <ul>
+                <li>
+                    <article>                        
+                        <picture>
+                            <img src="../../img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable de Baby Yoda">
+                        </picture>
+                        <div>                           
+                            <h3>BABY YODA BLUEBALL</h3>
+                            <p>STAR WARS</p>
+                            <p>precio: $ 1799,99</p>
+                        </div>          
+                        <div><!--contador-->
+                            <form>
+                                <label for="cantidad">Cantidad:</label> <!--hacer invisible en css-->
+                                <input type="number" id="cantidad" name="cantidad" min="1" max="100" step="1" value="1" autofocus required>
+                            </form>
+                        </div>
+                        <div><!--sumatoria-->
+                            <h3>$</h3>
+                            <h3>1799,99</h3>
+                        </div>
+                        <div><!--botón de eliminar circulo rojo-->
+                            <img src="../../img/icons/delete_trash.svg" alt="eliminar funko seleccionado" color="red">
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <picture>
+                            <img src="../../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable del Pidgeotto">
+                        </picture>
+                        <div>                          
+                            <h3>Pidgeotto</h3>
+                            <p>POKEMON</p>
+                            <p>Precio unitario: $ 1799,99</p>
+                        </div>           
+                        </div>          
+                        <div><!--contador-->
+                            <form>
+                                <label for="cantidad1">Cantidad:</label> <!--hacer invisible en css-->
+                                <input type="number" id="cantidad1" name="cantidad" min="1" max="100" step="1" value="1" autofocus required>
+                            </form>
+                        </div>
+                        <div><!--sumatoria-->
+                            <h3>$</h3>
+                            <h3>1799,99</h3>
+                        </div>
+                        <div><!--botón de eliminar circulo rojo-->
+                            <img src="../../img/icons/delete_trash.svg" alt="eliminar funko seleccionado">
+                        </div>  
+                    </article>
+                </li>  
+            </ul>    
+        </section>
+        <section>             
+            <h2>RESUMEN</h2><!--hacerle el subrayado en ccs-->
+            <article><!--tabla resumen-->
+                <div>
+                    <h3>CANTIDAD DE ELEMENTOS</h3>
+                    <p>3</p>
+                </div>
+                <div>
+                    <h3>SUBTOTAL</h3>
+                    <p>$5.399,97</p>
+                </div>
+                <div>
+                    <h3>ENVIO</h3>
+                    <p>$0,00</p>
+                </div>
+                <div> <!--agregar margen superior en ccs-->
+                    <h3><strong>TOTAL</strong></h3>
+                    <p>$5.399,97</p>
+                </div>
+            </article>
+            <div> <!--boton de pagar-->
+                <form action=".JS">
+                    <a href=""><input type="button" value="IR A PAGAR"></a>
+                </form>
+            </div>
+        </section>
+    </main> 
+    <footer>  <!--Inicio del footer-->
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="../admin/login.html">INGRESAR</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">CONTACTO</a>
+                    </li>                                       
+                </ul>
+                <picture>
+                    <img src="../../img/branding/isotype.svg" alt="Imagen de Isologotipo">
+                </picture>
+            </nav>
+        </section>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>  <!--Final del footer-->
+</body>
+</html>

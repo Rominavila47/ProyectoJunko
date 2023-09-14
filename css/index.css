@@ -69,6 +69,7 @@ header,
 footer {
     font-family: var(--alternative-font);
     color: var(--ligth-font-solid);
+    background-color: var(--dark-bg-solid);
     
 }
 ul,ol { 
@@ -80,9 +81,17 @@ ul,ol {
 
 p {
     font-size: 1.8em;
+    color: #09090a;
+}
+h3 {
+    color: #09090a;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 403f91749de0520f76d458f859c380dd7935c2da
