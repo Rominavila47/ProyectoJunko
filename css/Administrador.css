@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 
 /* Estilos generales */
 body {
@@ -129,4 +130,91 @@ nav ul li a {
 /* Derechos de autor */
 footer p {
   margin: 10px 0;
+}
+
+
+/* Login y Register */
+
+body form {
+  width: 350px; 
+  margin: 0 auto; 
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  grid-gap: 10px; 
+  align-items: center; 
+}
+
+body label {
+  text-align: left; 
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="button"] {
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+
+h1 {
+color: #1F1F1F;
+text-align: center;
+font-family: Raleway;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.68px;
+margin: 10px;
+}
+h2 {
+color: #1F1F1F;
+text-align: center;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1px;
+margin: 0;
+}
+
+#boton {
+  background-color: #FF3333;
+  color: white;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  width: 100px;
+  height: 35px;
+  border-radius: 3px;
+  text-align: center;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; 
+}
+
+#opciones {
+  text-align: center; 
+  padding: 10px; 
+}
+#opciones a {
+  color: #1D84B5;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input[type="button"],
+input[type="checkbox"],
+label,
+a {
+  margin-bottom: 10px; 
 }

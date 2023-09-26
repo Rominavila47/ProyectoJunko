@@ -69,7 +69,9 @@ header,
 footer {
     font-family: var(--alternative-font);
     color: var(--ligth-font-solid);
-    
+    background-color: var(--dark-bg-solid);
+    font-size:var(--font-xsmall);
+      
 }
 ul,ol { 
     list-style-type: none;
