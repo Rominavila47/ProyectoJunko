@@ -91,7 +91,128 @@ h3 {
     max-width: 1200px;
     margin: 0 auto;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 403f91749de0520f76d458f859c380dd7935c2da
+/* Header de Create.html */
+#headCreate{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#logo{
+    margin: 2em 4em; /*2em (arriba y abajo) -- 4em (izquierda y derecha)*/
+}
+
+#headerMenu{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#espacio{ /*para separar el logo de las opcione de menu */
+    width: 30%;
+}
+
+#headerMenu a{
+    width: 50%;
+}
+/* fin del header de Create.html */
+
+/* Cuerpo de Create.html */
+
+
+
+#contCreate{ /* contenedor */
+    width: 50%;
+    height: 70vh;
+    margin: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+}
+
+#contCreate h1{
+    font-size: var(--font-xlarge);
+}
+
+#createCat{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    font-size: var(--font-medium);
+}
+#createCat label{
+    font-size: var(--font-xsmall);
+    font-weight: lighter;
+}
+label{
+    font-size: var(--font-small);
+    font-weight: bold;
+}
+.lineaRoja{
+    border: 0;
+    /* width: 15em; */
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.noBold{
+    /* color: blue; */
+    font: var(--base-font);
+    font-size: large;
+}
+
+.btnRojo{
+    background-color: red;
+    border: 0;
+    padding: 0.5em;
+    margin-right: 2em;
+}
+
+
+/* fin del cuerpo de Create.html */
+
+/* Footer de Create.html */
+footer section{
+    display: flex;
+    flex-direction: row-reverse;
+    /* align-content: center; */
+    justify-content: space-between;
+}
+
+.espacioFoot{ /*para separar el logo de las opcione de menu */
+    width: 10%;
+    color: var(--dark-bg-solid);
+    /* background-color: aqua; */
+}
+
+
+
+footer nav ul{
+    margin: 4em;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+#logoFoot{
+    margin: 4em;
+    display: flex;
+    flex-direction: row;
+    /* margin-right: 3em; */
+}
+
+footer p{
+    color: antiquewhite;
+    text-align: center;
+}
+
+/* fin del footer de Create.html */

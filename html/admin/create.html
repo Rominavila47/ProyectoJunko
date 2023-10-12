@@ -9,83 +9,101 @@
     <link rel="stylesheet" href="../../css/index.css">
 </head>
 
-<header>
+<header id="headCreate">
     <div id="logo">
         <img src="../../img/branding/logo_light_horizontal.svg" alt="Logo de la tienda">
     </div>
 
-    <nav>
+    <div id="espacio"></div>
+
+    <div id="headerMenu">
         <a href="#">Ver Tienda</a>
-        <a href="#">Administrador</a>
+        <a href="#">Admin</a>
         <a href="#">Salir</a>
-    </nav>
+        <!-- <div>Ver Tienda</div>
+        <div>Admin</div>
+        <div>Salir</div> -->
+    </div>
 </header>
 
+<div id="contCreate">
 
-<h1>CREAR NUEVO ITEM</h1>
+    <h1>CREAR NUEVO ITEM</h1> <br><br>
 
-<form>
+    <form>
+        <div id="createCat">
+            <label for="categ">Categoría:</label>
+            <select name="categ" id="categ">
+                <option value="Figuras">Figuras</option>
+                <option value="Star">Star wars</option>
+                <option value="Harry">Harry Potter</option>
+                <option value="Pokemon">Pokemon</option>
+            </select>
 
-    <label for="categ">Categoría:</label>
-    <select name="categ" id="categ">
-        <option value="Figuras">Figuras</option>
-        <option value="Star">Star wars</option>
-        <option value="Harry">Harry Potter</option>
-        <option value="Pokemon">Pokemon</option>
-    </select>
+            <label for="license">Licencia:</label>
+            <select name="license" id="license">
+                <option value="1">1111111111</option>
+                <option value="2">2111111111</option>
+                <option value="3">3111111111</option>
+            </select>
+        </div> <br>
 
-    <label for="license">Licencia:</label>
-    <select name="license" id="license">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-    </select><br>
+        <label for="prod_name" >Nombre del producto:</label>
+        <input type="text" id="prod_name" name="prod_name" class="lineaRoja" placeholder="Kakashi Hatake Shippuden Saga"><br><br>
 
-    <label for="prod_name">Nombre del producto:</label>
-    <input type="text" id="prod_name" name="prod_name" placeholder="Kakashi Hatake Shippuden Saga"><br>
+        <label for="prod_desc"></label>
+        <textarea rows="5" cols="70" id="prod_desc" name="prod_desc" placeholder="Descripción del producto"></textarea><br>
+        
+        <label for="sku" class="noBold">Sku:</label>
+        <input type="text" id="sku" name="sku" class="lineaRoja"  placeholder="SSK111AB001">
 
-    <label for="prod_desc"></label>
-    <input type="text" id="prod_desc" name="prod_desc" placeholder="Descripción del producto"><br>
-    
-    <label for="sku">Sku:</label>
-    <input type="text" id="sku" name="sku" placeholder="SSK111AB001">
+        <label for="price" class="noBold">Precio:</label>
+        <input type="text" id="price" name="price" class="lineaRoja"  placeholder="$0.000,00">
 
-    <label for="price">Precio:</label>
-    <input type="text" id="price" name="price" placeholder="$0.000,00">
+        <label for="stock" class="noBold">Stock:</label>
+        <input type="text" id="stock" name="stock" class="lineaRoja"  placeholder="0">
 
-    <label for="stock">Stock:</label>
-    <input type="text" id="stock" name="stock" placeholder="0">
+        <label for="discou" class="noBold">Descuento:</label>
+        <input type="text" id="discou" name="discou" class="lineaRoja"  placeholder="0%">
 
-    <label for="discou">Descuento:</label>
-    <input type="text" id="discou" name="discou" placeholder="0%">
-
-    <label for="mpayment">Cuotas:</label>
-    <select name="mpayment" id="mpayment">
-        <option value="3cuotas">3 Cuotas sin interés</option>
-        <option value="6cuotas">6 Cuotas sin interés</option>
-        <option value="12cuotas">12 Cuotas sin interés</option>
-    </select><br>
+        <label for="mpayment" class="noBold">Cuotas:</label>
+        <select name="mpayment" id="mpayment">
+            <option value="3cuotas">3 Cuotas sin interés</option>
+            <option value="6cuotas">6 Cuotas sin interés</option>
+            <option value="12cuotas">12 Cuotas sin interés</option>
+        </select><br>
 
 
-    <label for="pictures">Imágenes:</label><br> <!--falta mensaje no seleccionó ningún archivo-->
+        <label for="pictures" class="noBold">Imágenes:</label><br> <!--falta mensaje no seleccionó ningún archivo-->
+        <input type="file" name="pictures" >
 
-    <button type="submit" value="Submit">Agregar Producto</button>
-    <button type="reset" value="Reset">Limpiar</button>
-</form>
+        <br><br>
 
+        <button type="submit" value="Submit" class="btnRojo">Agregar Producto</button>
+        <button type="reset" value="Reset" class="btnRojo">Limpiar</button>
+    </form>
+</div>
 
 <footer>
-    <div class="logo">
-        <img src="../../img/branding/isotype.svg" alt="Logo de la tienda">
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Registrarse</a></li>
-            <li><a href="#">Ingresar</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+    <section>
+        <div id="logoFoot">
+            <!-- <div class="espacioFoot">xxx</div> -->
+            <img src="../../img/branding/isotype.svg" alt="Logo de la tienda">
+            <div class="espacioFoot">yyyyyyyyyy</div>
+        </div>
+
+        <div class="espacioFoot"></div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Ingresar</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </section>
+    
     <p>&copy; All rights reserved 2022 - Funkoshop &copy;</p>
 </footer>
 
