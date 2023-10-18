@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunkoShop</title>
+    <title>FunkoShop.Car</title>
     <link rel="icon" type="image/x-icon" href="../../img/branding/isotype.svg">
     <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
-    <header><!--Inicio del header-->
-        <nav>
-            <picture>
+    <header>
+        <nav class="header-container">
+            <picture class="logo">
                 <a href="../tienda/index.html">
                 <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca"></a>
             </picture>
@@ -19,11 +19,10 @@
                 <li><a href="../pages/contacto.html">CONTACTO</a></li>
                 <li><a href="../admin/login.html">LOGIN</a></li>
                 <li><a href="../tienda/car.html">
-                <img src="../../img/icons/cart-icon.svg" alt="Carrito de compras"></a>
-                </li>
+                <img src="../../img/icons/cart-icon.svg" alt="Carrito de compras"></a></li>
            </ul>        
         </nav>
-    </header> <!--Final del header-->
+    </header>
     <main>
         <section> <!--hacerle el subrayado en ccs-->
             <h1>CARRITO DE COMPRAS</h1>
@@ -118,24 +117,22 @@
         </section>
     </main> 
     <footer>  <!--Inicio del footer-->
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../shop.html">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="../admin/login.html">INGRESAR</a>
-                    </li>
-                    <li>
-                        <a href="../pages/contact.html">CONTACTO</a>
-                    </li>                                       
-                </ul>
-                <picture>
-                    <img src="../../img/branding/isotype.svg" alt="Imagen de Isologotipo">
-                </picture>
-            </nav>
-        </section>
+        <nav class="footer-container">
+            <ul>
+                <li>
+                    <a href="../shop.html">SHOP</a>
+                </li>
+                <li>
+                    <a href="../admin/login.html">INGRESAR</a>
+                </li>
+                <li>
+                    <a href="../pages/contact.html">CONTACTO</a>
+                </li>                                       
+            </ul>
+            <picture class="footlogo">
+                <img src="../../img/branding/isotype.svg" alt="Imagen de Isologotipo">
+            </picture>
+        </nav>        
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>  <!--Final del footer-->
 </body>

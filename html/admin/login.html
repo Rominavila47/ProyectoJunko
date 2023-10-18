@@ -3,37 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunkoShop</title>    
+    <title>FunkoShop.Login</title>    
     <link rel="icon" type="image/x-icon" href="../../img/branding/isotype.svg">
     <link rel="stylesheet" href="../../css/index.css">
 </head>
-
 <body>
-<form>
-    <H1>INGRESAR A MI CUENTA</H1>
-    <!--esto es email-->
-    <form>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="johndoe@correo.com"><br>
-
-        <!--esto es pw-->
-
-        <label for="pwd">Contraseña:</label>
-        <input type="password" id="pwd" name="pwd" placeholder="*********"><br>
-
-        <!--botón ingresar-->
-        <input type="button" onclick="" value="Ingresar">
-    </form>
-
-    <!--checkbox recordame-->
-    <input type="checkbox" id="recordarme" name="recordarme" value="Recordarme">
-    <label for="recordarme">Recordarme</label><br>
-
-
-
-
-    <!--link olvidé contraseña-->
-    <a href="">Olvidé mi contraseña</a>
-</form>    
+    <header>
+        <nav class="header-container">
+            <picture class="logo">
+                <img src="../../img/branding/logo_light_horizontal.svg" alt="Logo de la tienda">
+            </picture>
+            <ul>
+                <li><a href="#">Ver Tienda</a></li>
+                <li><a href="#">Administrador</a></li>
+                <li><a href="#">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>    
+        <div> 
+            <h1>INGRESAR A MI CUENTA</h1>
+        </div>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+                    
+            <label for="pwd">Contraseña:</label>
+            <input type="password" id="pwd" name="pwd">
+            <input class="button-red" type="button" onclick="" value="Ingresar"><br>
+        <div class="opciones">   
+            <input type="checkbox" id="recordarme" name="recordarme" value="Recordarme">
+            <label for="recordarme">Recordarme</label><br>
+        </div>
+            <a href="">Olvidé mi contraseña</a>
+        </form>     
+    </main>
+    <footer>
+        <nav class="footer-container">
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Ingresar</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <picture class="footlogo">
+                <img src="../../img/branding/isotype.svg" alt="Logo de la tienda">
+            </picture>
+        </nav>
+        <p>&copy; All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>   
 </body>
 </html>

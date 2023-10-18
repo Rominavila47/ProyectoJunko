@@ -32,18 +32,22 @@
     --font-large: 2.4em;
     --font-medium: 1.8em;
     --font-small: 1.6em;
-    --font-xsmall: 1.2em;
+    --font-xsmall: 1.4em;
+    --font-xXsmall: 1em;
 
     /*Spacings*/
     --spacing-128: 12.8rem;
     --spacing-68: 6.8rem;
     --spacing-36: 3.6rem;
     --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2.0rem;
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
 }
 
+/*Normalización*/
 *,
 *::before,
 *::after {
@@ -51,48 +55,204 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-family: var(--base-font);
     font-size: 62.5%; /*pasar de 16px a 10px para usar em=10px*/
     color: var(--dark-solid);
 }
-
 a {
-    text-decoration: none;
-    font-size: 2em;
-    font-family: inherit;
-    color: inherit;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: inherit;
+  color: inherit;
 }
-
 header, 
 footer {
-    font-family: var(--alternative-font);
-    color: var(--ligth-font-solid);
-    background-color: var(--dark-bg-solid);
-    
+  background-color: var(--dark-bg-solid);
+  color: var(--ligth-font-solid);
+  font-family: var(--alternative-font);
+  font-size:var(--font-xXsmall);
+}
+
+/* Encabezado */
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide el contenedor en dos columnas iguales */
+  align-items: center; /* Alinea verticalmente el contenido en el centro */
+  padding: var(--spacing-16) var(--spacing-68);
+}
+.logo {
+  display: inline-grid;
+  justify-self: start;
+  max-width: var(--spacing-68);
+  height: auto;
+}
+header nav ul{
+  list-style: none; /* Elimina los estilos de la lista */
+  padding: 0; /* Elimina el relleno de la lista */
+  display: flex; /* Para que los elementos de la lista estén en línea */
+  justify-content: flex-end; /* Alinea los elementos de la lista a la derecha */
+  gap: var(--spacing-16);
+}
+
+/* Pie de página */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide el contenedor en dos columnas iguales */
+  align-items: center; /* Alinea verticalmente el contenido en el centro */
+  padding: var(--spacing-24) var(--spacing-68);
+}
+.footlogo { 
+  justify-self: end;
+}
+footer nav ul {
+  justify-content: start;
+  gap: var(--spacing-8);
+}
+footer p{
+  display: grid;
+  place-items: center;
+  color: var(--ligth-font-solid);
+  font-family: var(--alternative-font);
+  font-size:var(--font-small);
+}  
+
+
+
+/* Estilos generales */
+body {
+    font-family: var(--base-font);
+}
+main {
+  padding: var(--spacing-68);
 }
 ul,ol { 
-    list-style-type: none;
-    color: var(--ligth-font-solid);
-    display: flex;
-    justify-content: space-between;
+  list-style-type: none;
+  color: var(--ligth-font-solid);
+  display: grid;
+  justify-content: space-around;
 }
-
-p {
-    font-size: 1.8em;
-    color: #09090a;
+h1 {
+  color: var(--dark-solid);
+  text-align: center;
+  font-family: var(--alternative-font);
+  font-size: var(--font-xlarge);
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.01em;
+  margin: var(--spacing-12);
+}
+h2 {
+  color: var(--dark-solid);
+  text-align: center;
+  font-family: var(--alternative-font);
+  font-size: var(--font-large);
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.01em;
+  margin: var(--spacing-12);
 }
 h3 {
-    color: #09090a;
+  color: var(--dark-solid);
+}
+p {
+  font-size: 1.8em;
+  color: var(--dark-solid);
+}
+.button-red {
+  background-color: var(--primary-solid);
+  color: var(--ligth-font-solid);
+  font-size: var(--font-xsmall);
+  font-family: var(--base-font);
+  width: 100%;
+  height: var(--spacing-36);
+  text-align: center;
+  border: none;
+  margin: var(--spacing-24);
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+
+
+/* ADMIN */
+.busqueda{  
+  display: inline-grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: start;
+}
+.busqueda input[type="text"] {
+  height: auto;
+  width: 200%;
+  border-radius: 6px;
+  padding: var(--spacing-8);
+}
+.titleIzq {
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr;
+}
+.titleIzq h1 {
+  justify-content: start;
+  text-align: start;
+}
+.listado-productos table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--spacing-20);
+}
+.listado-productos th,
+.listado-productos td {
+  padding: var(--spacing-12);
+  text-align: left;
+}
+.listado-productos th {
+  color: #0c0c0c;
+}
+.Editar,
+.Borrar,
+.lupa-icon,
+.Add {
+  background-color: transparent;
+  width: var(--spacing-20);
+  height: var(--spacing-20);
+  border: none;
 }
 
-/* Header de Create.html */
+/*CREATE Y EDIT*/
+
+
+/*LOGIN Y REGISTER */
+body form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: var(--spacing-12);
+  place-self: center;  
+  margin: auto;
+  width: 350px;
+}
+body label {  
+  display: inline-grid;
+  text-align: left;
+}
+form
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+  width: 100%;
+  border: none;
+  border-bottom: solid var(--primary-solid);
+  background: transparent;
+}
+form a{
+  color: var(--secondary-solid);
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  font-style: normal;
+  font-weight: var(--font-medium);
+  line-height: normal;
+}
+.opciones {
+  justify-content: start;
+  text-align: start;
+}/* Header de Create.html */
 #headCreate{
     display: flex;
     flex-direction: row;
