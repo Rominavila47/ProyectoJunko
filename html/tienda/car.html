@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunkoShop</title>
     <link rel="icon" type="image/x-icon" href="../../img/branding/isotype.svg">
-    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/tienda.css">
+
 </head>
 <body>
     <header><!--Inicio del header-->
@@ -25,21 +26,21 @@
         </nav>
     </header> <!--Final del header-->
     <main>
-        <section> <!--hacerle el subrayado en ccs-->
+        <section id="titulo"> <!--hacerle el subrayado en ccs-->
             <h1>CARRITO DE COMPRAS</h1>
-        </section>
-        <section> <!--caption de lista de articulos seleccionados-->
-            <div>
-                <h3>DETALLE DE PRODUCTO</h3>
-                <h3>CANTIDAD</h3>
-                <h3>TOTAL</h3>
-            </div>
-        </section>
+        </section><br><br><br><br><br><br>
+        <section id="encabezado"> <!--caption de lista de articulos seleccionados-->
+                <ul>
+                    <li>DETALLE DE PRODUCTO</li>
+                    <li>CANTIDAD</li>
+                    <li>TOTAL</li>
+                </ul>
+        </section><br><br>
         <section><!--lista de articulos seleccionados-->
             <ul>
                 <li>
-                    <article>                        
-                        <picture>
+                    <article id="article1">                        
+                        <picture id="miniaturas">
                             <img src="../../img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable de Baby Yoda">
                         </picture>
                         <div>                           
@@ -62,9 +63,11 @@
                         </div>
                     </article>
                 </li>
+            </ul><br>
+            <ul>
                 <li>
-                    <article>
-                        <picture>
+                    <article id="article1">
+                        <picture id="miniaturas">
                             <img src="../../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable del Pidgeotto">
                         </picture>
                         <div>                          
@@ -90,9 +93,9 @@
                 </li>  
             </ul>    
         </section>
-        <section>             
+        <section class="resumen-section">             
             <h2>RESUMEN</h2><!--hacerle el subrayado en ccs-->
-            <article><!--tabla resumen-->
+            <article id="resumen"><!--tabla resumen-->
                 <div>
                     <h3>CANTIDAD DE ELEMENTOS</h3>
                     <p>3</p>
@@ -110,7 +113,7 @@
                     <p>$5.399,97</p>
                 </div>
             </article>
-            <div> <!--boton de pagar-->
+            <div id="botonpagar"> <!--boton de pagar-->
                 <form action=".JS">
                     <a href=""><input type="button" value="IR A PAGAR"></a>
                 </form>
