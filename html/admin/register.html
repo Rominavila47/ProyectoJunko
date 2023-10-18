@@ -3,64 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunkoShop</title>    
+    <title>FunkoShop.Register</title>    
     <link rel="icon" type="image/x-icon" href="../../img/branding/isotype.svg">
-    <link rel="stylesheet" href="../../css/Administrador.css">
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
   <header>
-    <div id="logo">
-        <img src="../../img/branding/logo_light_horizontal.svg" alt="Logo de la tienda">
-    </div>
-    
-    <nav>
-        <a href="#">Ver Tienda</a>
-        <a href="#">Administrador</a>
-        <a href="#">Salir</a>
+    <nav class="header-container">
+      <picture class="logo">
+          <img src="../../img/branding/logo_light_horizontal.svg" alt="Logo de la tienda">
+      </picture>
+      <ul>
+        <li><a href="#">Ver Tienda</a></li>
+        <li><a href="#">Administrador</a></li>
+        <li><a href="#">Salir</a></li>
+      </ul>   
     </nav>
   </header> 
-  
- <h1>CREA TU CUENTA</h1>
- <h2>Completa el formulario para ser parte del mundo de los Funkos</h2><br>
- <form>
-    <label for="fname">Nombre:</label>
-    <input type="text" id="fname" name="fname">
-    
-    <label for="lname">Apellido:</label>
-    <input type="text" id="lname" name="lname"> 
-     
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-    
-    <label for="pwd">Contraseña:</label>
-    <input type="password" id="pwd" name="pwd">
-    
-    <label for="rpwd">Repita contraseña:</label>
-    <input type="password" id="rpwd" name="rpwd" placeholder=""><br>
-
-</form>
-
-<div class="contenedor">
-  <div id="opciones">  
-    <input id="boton" onclick="" value="Registrar"><br><br>
-    <input type="checkbox" id="acepto" name="acepto" value="Acepto">
-    <label>Acepto<a href="">Términos y condiciones</a></label>
-  </div>
-</div>
-
-<footer>
-  <div class="logo">
-    <img src="../../img/branding/isotype.svg" alt="Logo de la tienda">
-  </div>
-      <nav>
-          <ul>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Registrarse</a></li>
-              <li><a href="#">Ingresar</a></li>
-              <li><a href="#">Contacto</a></li>
-          </ul>
-      </nav>
-  <p>&copy; All rights reserved 2023 - Funkoshop &copy;</p>
-</footer>  
+  <main>
+    <div> 
+      <h1>CREA TU CUENTA</h1>
+      <h2>Completa el formulario para ser parte del mundo de los Funkos</h2><br>
+    </div>
+    <form>
+        <label for="fname">Nombre:</label>
+        <input type="text" id="fname" name="fname">
+        
+        <label for="lname">Apellido:</label>
+        <input type="text" id="lname" name="lname"> 
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="pwd">Contraseña:</label>
+        <input type="password" id="pwd" name="pwd">
+        
+        <label for="rpwd">Repita contraseña:</label>
+        <input type="password" id="rpwd" name="rpwd" placeholder=""><br>
+      <div class="opciones">
+        <input class="button-red" onclick="" value="Registrar">
+        <input type="checkbox" id="acepto" name="acepto" value="Acepto">
+        <label for="acepto">Acepto<a href="">Términos y condiciones</a></label>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <nav class="footer-container">
+      <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Registrarse</a></li>
+          <li><a href="#">Ingresar</a></li>
+          <li><a href="#">Contacto</a></li>
+      </ul>
+      <picture class="footlogo">
+        <img src="../../img/branding/isotype.svg" alt="Logo de la tienda">
+      </picture>
+    </nav>
+    <p>&copy; All rights reserved 2023 - Funkoshop &copy;</p>
+  </footer>  
 </body>
 </html>

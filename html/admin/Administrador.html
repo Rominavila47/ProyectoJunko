@@ -1,34 +1,35 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Tienda en Línea</title>
-    <link rel="stylesheet" href="../../css/administrador.css"> 
+    <title>FunkoShop.Admin</title>
+    <link rel="icon" type="image/x-icon" href="../../img/branding/isotype.svg">
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
-  <header>
-    <div id="logo">
-        <img src="../../img/branding/logo_light_horizontal.svg" alt="Logo de la tienda">
-    </div>
-    
-    <nav>
-        <a href="#">Ver Tienda</a>
-        <a href="#">Administrador</a>
-        <a href="#">Salir</a>
-    </nav>
-</header>
+    <header>
+        <nav class="header-container">
+            <picture class="logo">
+                <img src="../../img/branding/logo_light_horizontal.svg" alt="Logo de la tienda">
+            </picture>
+            <ul>
+                <li><a href="#">Ver Tienda</a></li>
+                <li><a href="#">Administrador</a></li>
+                <li><a href="#">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-      <section class="busqueda">
-        <img src="../../img/icons/search_icon.svg" alt="Lupa" class="lupa-icon">
-        <input type="text" placeholder="Buscar productos...">
-        
-    </section>
-      <div id="nombre-tienda">
-        <h1>Listado de Productos</h1>
-    </div>
+        <section class="busqueda">
+            <button class="lupa-icon"> <img src="../../img/icons/search_icon.svg" alt="Lupa"></button>
+            <input type="text" placeholder="Buscar productos...">
+        </section>
+        <section class="titleIzq">
+            <h1>LISTADO DE PRODUCTOS</h1>
+            <label for="Add"><h2>AGREGAR</h2></label>
+            <button class="Add" id="Add"> <img src="../../img/icons/mdi_plus-box.png" alt="signo de suma para agregar"></button></td>
+        </section>
         <section class="listado-productos">
             <table>
                 <thead>
@@ -37,72 +38,65 @@
                         <th>Código</th>
                         <th>Nombre del Producto</th>
                         <th>Categoría</th>
-                        <th></th>
-                        <th></th>
                     </tr>
                 </thead>
-                <tbody>
-                   
+                <tbody>                   
                     <tr>
                         <td>1</td>
-                        <td>ABC123</td>
-                        <td>Producto 1</td>
-                        <td>Categoría A</td>
+                        <td>STW001001</td>
+                        <td>Baby Yoda Blueball</td>
+                        <td>STAR WARS</td>
                         <td> <button class="Editar"> <img class="Editar" src="../../img/icons/edit_pencil.svg" alt=""></button></td>
                         <td> <button class="Borrar"> <img class="Borrar" src="../../img/icons/delete_trash.svg" alt=""></button></td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>DEF456</td>
-                        <td>Producto 2</td>
-                        <td>Categoría B</td>
+                        <td>STW001002</td>
+                        <td>Boba Fett Fighter</td>
+                        <td>STAR WARS</td>
                         <td> <button class="Editar"> <img class="Editar" src="../../img/icons/edit_pencil.svg" alt=""></button></td>
                         <td> <button class="Borrar"> <img class="Borrar" src="../../img/icons/delete_trash.svg" alt=""></button></td>
                     </tr>
-
                     <tr>
-                      <td>2</td>
-                      <td>DEF456</td>
-                      <td>Producto 2</td>
-                      <td>Categoría B</td>
+                      <td>3</td>
+                      <td>STW001003</td>
+                      <td>Luke Skylwalker & Grogu</td>
+                      <td>STAR WARS</td>
                       <td> <button class="Editar"> <img class="Editar" src="../../img/icons/edit_pencil.svg" alt=""></button></td>
                       <td> <button class="Borrar"> <img class="Borrar" src="../../img/icons/delete_trash.svg" alt=""></button></td>
-                  </tr>
-
-                  <tr>
-                    <td>2</td>
-                    <td>DEF456</td>
-                    <td>Producto 2</td>
-                    <td>Categoría B</td>
-                    <td> <button class="Editar"> <img class="Editar" src="../../img/icons/edit_pencil.svg" alt=""></button></td>
-                      <td> <button class="Borrar"> <img class="Borrar" src="../../img/icons/delete_trash.svg" alt=""></button></td>
-                </tr>
-
-                <tr>
-                  <td>2</td>
-                  <td>DEF456</td>
-                  <td>Producto 2</td>
-                  <td>Categoría B</td>
-                  <td> <button class="Editar"> <img class="Editar" src="../../img/icons/edit_pencil.svg" alt=""></button></td>
-                      <td> <button class="Borrar"> <img class="Borrar" src="../../img/icons/delete_trash.svg" alt=""></button></td>
-              </tr>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>STW001004</td>
+                        <td>Stormtrooper Lightsaber</td>
+                        <td>STAR WARS</td>
+                        <td> <button class="Editar"> <img class="Editar" src="../../img/icons/edit_pencil.svg" alt=""></button></td>
+                        <td> <button class="Borrar"> <img class="Borrar" src="../../img/icons/delete_trash.svg" alt=""></button></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>PKM001001</td>
+                        <td>Charmander Smiley</td>
+                        <td>POKEMON</td>
+                        <td> <button class="Editar"> <img class="Editar" src="../../img/icons/edit_pencil.svg" alt=""></button></td>
+                        <td> <button class="Borrar"> <img class="Borrar" src="../../img/icons/delete_trash.svg" alt=""></button></td>
+                    </tr>
                     <!-- Agrega más filas según tus productos -->
                 </tbody>
             </table>
-            <button>Agregar</button>
         </section>
     </main>
     <footer>
-        <div class="logo">
-            <img src="../../img/branding/isotype.svg" alt="Logo de la tienda">
-        </div>
-        <nav>
+        <nav class="footer-container">
             <ul>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Registrarse</a></li>
                 <li><a href="#">Ingresar</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
+            <picture class="footlogo">
+                <img src="../../img/branding/isotype.svg" alt="Logo de la tienda">
+            </picture>
         </nav>
         <p>&copy; All rights reserved 2022 - Funkoshop &copy;</p>
     </footer>
