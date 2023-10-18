@@ -55,20 +55,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-family: var(--base-font);
     font-size: 62.5%; /*pasar de 16px a 10px para usar em=10px*/
     color: var(--dark-solid);
 }
-
 a {
   text-decoration: none;
   font-size: 2em;
   font-family: inherit;
   color: inherit;
 }
-
 header, 
 footer {
   background-color: var(--dark-bg-solid);
@@ -77,7 +74,6 @@ footer {
   font-size:var(--font-xXsmall);
 }
 
-
 /* Encabezado */
 .header-container {
   display: grid;
@@ -85,20 +81,18 @@ footer {
   align-items: center; /* Alinea verticalmente el contenido en el centro */
   padding: var(--spacing-16) var(--spacing-68);
 }
-
 .logo {
   display: inline-grid;
   justify-self: start;
   max-width: var(--spacing-68);
   height: auto;
 }
-
 header nav ul{
   list-style: none; /* Elimina los estilos de la lista */
   padding: 0; /* Elimina el relleno de la lista */
   display: flex; /* Para que los elementos de la lista estén en línea */
   justify-content: flex-end; /* Alinea los elementos de la lista a la derecha */
-  gap: var(--spacing-8);
+  gap: var(--spacing-16);
 }
 
 /* Pie de página */
@@ -108,17 +102,13 @@ header nav ul{
   align-items: center; /* Alinea verticalmente el contenido en el centro */
   padding: var(--spacing-24) var(--spacing-68);
 }
-
 .footlogo { 
   justify-self: end;
 }
-
 footer nav ul {
   justify-content: start;
   gap: var(--spacing-8);
 }
-
-/* Derechos de autor */
 footer p{
   display: grid;
   place-items: center;
@@ -132,172 +122,257 @@ footer p{
 /* Estilos generales */
 body {
     font-family: var(--base-font);
-  }
-  ul,ol { 
-    list-style-type: none;
-    color: var(--ligth-font-solid);
-    display: grid;
-    justify-content: space-around;
 }
-
-p {
-    font-size: 1.8em;
-    color: #09090a;
+main {
+  padding: var(--spacing-68);
 }
-
+ul,ol { 
+  list-style-type: none;
+  color: var(--ligth-font-solid);
+  display: grid;
+  justify-content: space-around;
+}
+h1 {
+  color: var(--dark-solid);
+  text-align: center;
+  font-family: var(--alternative-font);
+  font-size: var(--font-xlarge);
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.01em;
+  margin: var(--spacing-12);
+}
+h2 {
+  color: var(--dark-solid);
+  text-align: center;
+  font-family: var(--alternative-font);
+  font-size: var(--font-large);
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.01em;
+  margin: var(--spacing-12);
+}
 h3 {
-    color: #09090a;
+  color: var(--dark-solid);
+}
+p {
+  font-size: 1.8em;
+  color: var(--dark-solid);
+}
+.button-red {
+  background-color: var(--primary-solid);
+  color: var(--ligth-font-solid);
+  font-size: var(--font-xsmall);
+  font-family: var(--base-font);
+  width: 100%;
+  height: var(--spacing-36);
+  text-align: center;
+  border: none;
+  margin: var(--spacing-24);
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+
+
+/* ADMIN */
+.busqueda{  
+  display: inline-grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: start;
+}
+.busqueda input[type="text"] {
+  height: auto;
+  width: 200%;
+  border-radius: 6px;
+  padding: var(--spacing-8);
+}
+.titleIzq {
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr;
+}
+.titleIzq h1 {
+  justify-content: start;
+  text-align: start;
+}
+.listado-productos table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--spacing-20);
+}
+.listado-productos th,
+.listado-productos td {
+  padding: var(--spacing-12);
+  text-align: left;
+}
+.listado-productos th {
+  color: #0c0c0c;
+}
+.Editar,
+.Borrar,
+.lupa-icon,
+.Add {
+  background-color: transparent;
+  width: var(--spacing-20);
+  height: var(--spacing-20);
+  border: none;
 }
 
+/*CREATE Y EDIT*/
 
 
-
-  /* Contenido principal */
-  main {
-    padding: var(--spacing-20);
-  }
-  
-  .lupa-icon {
-    width: var(--spacing-20);
-    height: var(--spacing-20);
-    margin-left: var(--spacing-8);
-    vertical-align: middle;
-  }
-  
-  .busqueda input[type="text"] {
-    width: 590.88px;
-    height: 44.28px;
-    top: 180px;
-    left: 110px;
-    border-radius: 6px;
-  }
-  
-  /* Listado de productos */
-  .listado-productos table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: var(--spacing-20);
-  }
-  
-  .listado-productos th,
-  .listado-productos td {
-    padding: var(--spacing-12);
-    text-align: left;
-  }
-  
-  .listado-productos th {
-    color: #0c0c0c;
-  }
-  
-  /* Botón */
-  button {
-    background-color: var(--dark-solid);
-    color: var(--ligth-font-solid);
-    padding: var(--spacing-12) var(--spacing-20);
-    border: none;
-    border-radius: var(--spacing-8);
-    font-size: var(--font-medium);
-    cursor: pointer;
-  }
-  
-  .Editar {
-    background-color: transparent;
-    width: var(--spacing-20);
-    height: var(--spacing-20);
-  }
-  
-  .Borrar {
-    background-color: transparent;
-    width: var(--spacing-20);
-    height: var(--spacing-20);
-  }
-  
-
-  /* Formulario de inicio de sesión y registro */
-  body form {
-    width: 350px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: var(--spacing-10);
-    align-items: center;  }
-  
-  body label {
-    text-align: left;
-    display: inline-block;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="button"] {
-    width: 100%;
-    margin-bottom: var(--spacing-10);
-  }
-  
-  h1 {
-    color: var(--dark-solid);
-    text-align: center;
-    font-family: var(--alternative-font);
-    font-size: var(--font-xlarge);
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.1em;
-    margin: var(--spacing-12);
-  }
-  
-  h2 {
-    color: var(--dark-solid);
-    text-align: center;
-    font-family: var(--alternative-font);
-    font-size: var(--font-large);
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.1em;
-    margin: 0;
-  }
-  
-  #boton {
-    background-color: var(--primary-solid);
-    color: var(--ligth-font-solid);
-    font-size: var(--font-medium);
-    font-family: var(--base-font);
-    width: var(--spacing-128);
-    height: var(--spacing-36);
-    border-radius: var(--spacing-8); 
-    text-align: center;
-  }
-
-  .contenedor {
+/*LOGIN Y REGISTER */
+body form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: var(--spacing-12);
+  place-self: center;  
+  margin: auto;
+  width: 350px;
+}
+body label {  
+  display: inline-grid;
+  text-align: left;
+}
+form
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+  width: 100%;
+  border: none;
+  border-bottom: solid var(--primary-solid);
+  background: transparent;
+}
+form a{
+  color: var(--secondary-solid);
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  font-style: normal;
+  font-weight: var(--font-medium);
+  line-height: normal;
+}
+.opciones {
+  justify-content: start;
+  text-align: start;
+}/* Header de Create.html */
+#headCreate{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-content: center;
+}
+
+#logo{
+    margin: 2em 4em; /*2em (arriba y abajo) -- 4em (izquierda y derecha)*/
+}
+
+#headerMenu{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: auto;
-  }
-  
-  .opciones {
-    text-align: center;
-    padding: var(--spacing-10);
-  }
+}
 
-  .opciones a{
-    color: var(--secondary-solid);
-    font-family: var(--base-font);
+#espacio{ /*para separar el logo de las opcione de menu */
+    width: 30%;
+}
+
+#headerMenu a{
+    width: 50%;
+}
+/* fin del header de Create.html */
+
+/* Cuerpo de Create.html */
+
+
+
+#contCreate{ /* contenedor */
+    width: 50%;
+    height: 70vh;
+    margin: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+}
+
+#contCreate h1{
+    font-size: var(--font-xlarge);
+}
+
+#createCat{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    font-size: var(--font-medium);
+}
+#createCat label{
+    font-size: var(--font-xsmall);
+    font-weight: lighter;
+}
+label{
     font-size: var(--font-small);
-    font-style: normal;
-    font-weight: var(--font-medium);
-    line-height: normal;
-  }
-  
-  input[type="button"],
-  input[type="checkbox"],
-  label{
-    margin-bottom: var(--spacing-10);
-  }
-  
+    font-weight: bold;
+}
+.lineaRoja{
+    border: 0;
+    /* width: 15em; */
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.noBold{
+    /* color: blue; */
+    font: var(--base-font);
+    font-size: large;
+}
+
+.btnRojo{
+    background-color: red;
+    border: 0;
+    padding: 0.5em;
+    margin-right: 2em;
+}
+
+
+/* fin del cuerpo de Create.html */
+
+/* Footer de Create.html */
+footer section{
+    display: flex;
+    flex-direction: row-reverse;
+    /* align-content: center; */
+    justify-content: space-between;
+}
+
+.espacioFoot{ /*para separar el logo de las opcione de menu */
+    width: 10%;
+    color: var(--dark-bg-solid);
+    /* background-color: aqua; */
+}
+
+
+
+footer nav ul{
+    margin: 4em;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+#logoFoot{
+    margin: 4em;
+    display: flex;
+    flex-direction: row;
+    /* margin-right: 3em; */
+}
+
+footer p{
+    color: antiquewhite;
+    text-align: center;
+}
+
+/* fin del footer de Create.html */
