@@ -66,6 +66,7 @@ a {
   font-family: inherit;
   color: inherit;
 }
+
 header, 
 footer {
   background-color: var(--dark-bg-solid);
@@ -93,6 +94,37 @@ header nav ul{
   display: flex; /* Para que los elementos de la lista estén en línea */
   justify-content: flex-end; /* Alinea los elementos de la lista a la derecha */
   gap: var(--spacing-16);
+  transition: background.3s ease-in-out;
+  position: relative;
+}
+header nav ul li:hover{
+  padding: var(--spacing-16) var(--spacing-8); 
+  background-color: var(--primary-900);
+}
+.width-icon {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+.witdth-submenu:hover .submenu {
+  display: block;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: var(--dark-bg-solid);
+  top: 0;
+  left: 0;
+}
+.submenu-link {
+  display: block;
+  padding: var(--spacing-8) var(--spacing-16);
+  font-size: var(--font-medium);
+  transition: background.3s ease-in-out;
+
+}
+.submenu-link:hover {
+  background-color: var(--primary-900);
 }
 
 /* Pie de página */
@@ -140,7 +172,7 @@ h1 {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.01em;
-  margin: var(--spacing-12);
+  margin: var(--spacing-16);
 }
 h2 {
   color: var(--dark-solid);
@@ -154,11 +186,19 @@ h2 {
 }
 h3 {
   color: var(--dark-solid);
+  text-align: center;
+  font-family: var(--alternative-font);
+  font-size: var(--font-xXsmall);
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.01em;
+  margin: var(--spacing-20);
 }
 p {
   font-size: 1.8em;
   color: var(--dark-solid);
 }
+
 .button-red {
   background-color: var(--primary-solid);
   color: var(--ligth-font-solid);
@@ -185,10 +225,6 @@ p {
   border-radius: 6px;
   padding: var(--spacing-8);
 }
-.titleIzq {
-  display: grid;
-  grid-template-columns: 6fr 1fr 1fr;
-}
 .titleIzq h1 {
   justify-content: start;
   text-align: start;
@@ -204,7 +240,7 @@ p {
   text-align: left;
 }
 .listado-productos th {
-  color: #0c0c0c;
+  color: var(--dark-solid);
 }
 .Editar,
 .Borrar,
@@ -216,27 +252,26 @@ p {
   border: none;
 }
 
-/*CREATE Y EDIT*/
-
-
 /*LOGIN Y REGISTER */
 body form {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns:  1fr auto;
   grid-gap: var(--spacing-12);
-  place-self: center;  
   margin: auto;
-  width: 350px;
+  width: 50rem;
 }
 body label {  
-  display: inline-grid;
-  text-align: left;
+  font-size: var(--font-small);
+  font-weight: 500;
+  line-height: normal;
 }
 form
 input[type="text"],
 input[type="email"],
 input[type="password"]{
-  width: 100%;
+  display: flex;
+  position: left;
+  width: 30rem;
   border: none;
   border-bottom: solid var(--primary-solid);
   background: transparent;
@@ -250,92 +285,21 @@ form a{
   line-height: normal;
 }
 .opciones {
-  justify-content: start;
-  text-align: start;
-<<<<<<< HEAD
+  display: flex;
+  justify-content: flex-start;
+  margin: var(--spacing-20);
+  padding: var(--spacing-12);
 }
-=======
-}/* Header de Create.html */
-#headCreate{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+#center {
+  display: flex;
+  place-content: center;
 }
 
-#logo{
-    margin: 2em 4em; /*2em (arriba y abajo) -- 4em (izquierda y derecha)*/
+/*CREATE Y EDIT*/
+.titleIzq {
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr;
 }
+.createform{ 
 
-#headerMenu{
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-#espacio{ /*para separar el logo de las opcione de menu */
-    width: 30%;
-}
-
-#headerMenu a{
-    width: 50%;
-}
-/* fin del header de Create.html */
-
-/* Cuerpo de Create.html */
-
-
-
-#contCreate{ /* contenedor */
-    width: 50%;
-    height: 70vh;
-    margin: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    align-items: flex-start;
-}
-
-#contCreate h1{
-    font-size: var(--font-xlarge);
-}
-
-#createCat{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* align-items: flex-start; */
-    font-size: var(--font-medium);
-}
-#createCat label{
-    font-size: var(--font-xsmall);
-    font-weight: lighter;
-}
-label{
-    font-size: var(--font-small);
-    font-weight: bold;
-}
-.lineaRoja{
-    border: 0;
-    /* width: 15em; */
-    text-decoration-line: underline;
-    text-decoration-color: red;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.noBold{
-    /* color: blue; */
-    font: var(--base-font);
-    font-size: large;
-}
-
-.btnRojo{
-    background-color: red;
-    border: 0;
-    padding: 0.5em;
-    margin-right: 2em;
 }
