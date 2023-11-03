@@ -452,7 +452,4 @@ form a{
 }
 
 /*CREATE Y EDIT*/
-.titleIzq {
-  display: grid;
-  grid-template-columns: 6fr 1fr 1fr;
-}
+
