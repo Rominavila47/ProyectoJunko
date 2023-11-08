@@ -28,30 +28,30 @@
       <h1 class="tituloh1">CREA TU CUENTA</h1>
       <h2  class="tituloh2">Completa el formulario para ser parte del mundo de los Funkos</h2>
     </div>
-    <form>
-        <label for="fname">Nombre:</label>
-        <input type="text" id="fname" name="fname">
+    <form class="formulario">
+        <label class="formulario__label"  for="fname">Nombre:</label>
+        <input class="formulario__input" type="text" id="fname" name="fname">
         
-        <label for="lname">Apellido:</label>
-        <input type="text" id="lname" name="lname"> 
+        <label class="formulario__label" for="lname">Apellido:</label>
+        <input class="formulario__input" type="text" id="lname" name="lname"> 
         
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <label class="formulario__label" for="email">Email:</label>
+        <input class="formulario__input" type="email" id="email" name="email">
         
-        <label for="pwd">Contraseña:</label>
-        <input type="password" id="pwd" name="pwd">
+        <label class="formulario__label" for="pwd">Contraseña:</label>
+        <input class="formulario__input" type="password" id="pwd" name="pwd">
         
-        <label for="rpwd">Repita contraseña:</label>
-        <input type="password" id="rpwd" name="rpwd" placeholder="">
-
-      <div class="opciones">
-        <button class="button-red" type="reset" value="Registrar" onclick="">Registrar</button>
-        <input type="checkbox" id="acepto" name="acepto" value="Acepto">
-        <label for="acepto">Acepto</label>
-        <a href="">Términos y condiciones</a>
-      </div>
-      
+        <label class="formulario__label" for="rpwd">Repita contraseña:</label>
+        <input class="formulario__input" type="password" id="rpwd" name="rpwd" placeholder="">
     </form>
+    
+    <div class="formulario__checkbox">
+        <button class="formulario__boton" type="reset" value="Registrar" onclick="">Registrar</button>
+        <input type="checkbox" id="acepto" name="acepto" value="Acepto">
+        <label class="formulario__label" for="acepto">Acepto</label>
+        <a class="formulario__label-a" href="">Términos y condiciones</a>
+    </div>
+      
   </main>
   <footer class="footer">  <!--Inicio del footer-->
     <nav class="navbar container">

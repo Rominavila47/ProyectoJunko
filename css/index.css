@@ -310,56 +310,6 @@ header {
   text-align: center;
 }
 
-
-
-
-
-/* Estilos generales */
-.tituloh1 {
-  color: var(--dark-solid);
-  text-align: center;
-  font-family: var(--alternative-font);
-  font-size: var(--font-xlarge);
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.01em;
-  margin: var(--spacing-16);
-}
-.tituloh2 {
-  color: var(--dark-solid);
-  text-align: center;
-  font-family: var(--alternative-font);
-  font-size: var(--font-large);
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.01em;
-  margin: var(--spacing-12);
-}
-.tituloh3 {
-  color: var(--dark-solid);
-  text-align: center;
-  font-family: var(--alternative-font);
-  font-size: var(--font-xXsmall);
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 0.01em;
-  margin: var(--spacing-20);
-}
-
-.button-red {
-  background-color: var(--primary-solid);
-  color: var(--ligth-font-solid);
-  font-size: var(--font-xsmall);
-  font-family: var(--base-font);
-  width: 100%;
-  height: var(--spacing-36);
-  text-align: center;
-  border: none;
-  margin: var(--spacing-24);
-}
-
-
-
 /* ADMIN */
 .busqueda__content{  
   display: inline-flex;  
@@ -456,30 +406,64 @@ header {
 
 
 /*LOGIN Y REGISTER */
-body form {
+
+/* Estilos generales */
+.tituloh1 {
+  color: var(--dark-solid);
+  text-align: center;
+  font-family: var(--alternative-font);
+  font-size: var(--font-xlarge);
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.01em;
+  margin: var(--spacing-16);
+}
+.tituloh2 {
+  color: var(--dark-solid);
+  text-align: center;
+  font-family: var(--alternative-font);
+  font-size: var(--font-large);
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.01em;
+  margin: var(--spacing-12);
+}
+.tituloh3 {
+  color: var(--dark-solid);
+  text-align: center;
+  font-family: var(--alternative-font);
+  font-size: var(--font-xXsmall);
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.01em;
+  margin: var(--spacing-20);
+}
+
+.button-red {
+  background-color: var(--primary-solid);
+  color: var(--ligth-font-solid);
+  font-size: var(--font-xsmall);
+  font-family: var(--base-font);
+  width: 100%;
+  height: var(--spacing-36);
+  text-align: center;
+  border: none;
+  margin: var(--spacing-24);
+}
+
+.formulario {
   display: grid;
   grid-template-columns:  1fr auto;
   grid-gap: var(--spacing-12);
   margin: auto;
   width: 50rem;
 }
-body label {  
+.formulario__label {  
   font-size: var(--font-small);
   font-weight: 500;
   line-height: normal;
 }
-form
-input[type="text"],
-input[type="email"],
-input[type="password"]{
-  display: flex;
-  position: left;
-  width: 30rem;
-  border: none;
-  border-bottom: solid var(--primary-solid);
-  background: transparent;
-}
-form a{
+.formulario__label-a {  
   color: var(--secondary-solid);
   font-family: var(--base-font);
   font-size: var(--font-small);
@@ -487,15 +471,49 @@ form a{
   font-weight: var(--font-medium);
   line-height: normal;
 }
-.opciones {
+
+.formulario__input {
   display: flex;
-  justify-content: flex-start;
-  margin: var(--spacing-20);
-  padding: var(--spacing-12);
+  position: left;
+  width: 30rem;
+  border: none;
+  border-bottom: solid var(--primary-solid);
+  background: transparent;
 }
-#center {
+.formulario__boton{
+  background-color: var(--primary-solid);
+  color: var(--ligth-font-solid);
+  font-size: var(--font-xsmall);
+  font-family: var(--base-font);
+  border: none;
+  margin: var(--spacing-24);
+  height: var(--spacing-36);
+  width: 12vw;
+  cursor: pointer; 
+  transition: all .3s ease-in-out;
+}
+.formulario__boton:hover {
+  background-color: var(--primary-500);  
+  border-color: var(--primary-900);
+}
+.formulario__checkbox {
   display: flex;
-  place-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: var(--spacing-12);
+  padding: var(--spacing-12);
+  gap: var(--spacing-8);
+}
+.formulario__link {
+  display: flex;
+  justify-content: center;
+  color: var(--secondary-solid);
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  font-style: normal;
+  font-weight: var(--font-medium);
+  line-height: normal;
+  margin: var(--spacing-16) var(--spacing-128);
 }
 
 /*CREATE Y EDIT*/

@@ -27,24 +27,23 @@
         <div> 
             <h1 class="tituloh1">INGRESAR A MI CUENTA</h1>
         </div>
-        <form>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+        <form class="formulario">
+            <label class="formulario__label" for="email">Email:</label>
+            <input class="formulario__input" type="email" id="email" name="email">
                     
-            <label for="pwd">Contraseña:</label>
-            <input type="password" id="pwd" name="pwd">
+            <label class="formulario__label" for="pwd">Contraseña:</label>
+            <input class="formulario__input" type="password" id="pwd" name="pwd">
             
-            <button class="button-red" type="button" value="Ingresar" onclick="">Ingresar</button>
+            <button class="formulario__boton" type="button" value="Ingresar" onclick="">Ingresar</button>
 
-        <div class="opciones">   
+        <div class="formulario__checkbox">   
             <input type="checkbox" id="recordarme" name="recordarme" value="Recordarme">
-            <label for="recordarme">Recordarme</label>
+            <label class="formulario__label" for="recordarme">Recordarme</label>
         </div>
-        <div id="center"> 
-            <a href="">Olvidé mi contraseña</a>
-        </div>
-
         </form>     
+        <div class="formulario__forgot"> 
+            <a class="formulario__link" href="">Olvidé mi contraseña</a>
+        </div>
     </main>
     <footer class="footer">  <!--Inicio del footer-->
         <nav class="navbar container">
