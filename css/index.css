@@ -60,6 +60,9 @@ html {
     font-size: 62.5%; /*pasar de 16px a 10px para usar em=10px*/
     color: var(--dark-solid);
 }
+main {
+  padding: var(--spacing-68);
+}
 a {
   text-decoration: none;
   font-family: inherit;
@@ -318,13 +321,7 @@ header {
 
 
 /* Estilos generales */
-body {
-    font-family: var(--base-font);
-}
-main {
-  padding: var(--spacing-68);
-}
-h1 {
+.tituloh1 {
   color: var(--dark-solid);
   text-align: center;
   font-family: var(--alternative-font);
@@ -334,7 +331,7 @@ h1 {
   letter-spacing: 0.01em;
   margin: var(--spacing-16);
 }
-/*h2 {
+.tituloh2 {
   color: var(--dark-solid);
   text-align: center;
   font-family: var(--alternative-font);
@@ -343,8 +340,8 @@ h1 {
   line-height: normal;
   letter-spacing: 0.01em;
   margin: var(--spacing-12);
-}*/
-h3 {
+}
+.tituloh3 {
   color: var(--dark-solid);
   text-align: center;
   font-family: var(--alternative-font);
@@ -452,4 +449,76 @@ form a{
 }
 
 /*CREATE Y EDIT*/
+/*Car*/
+#titulo {
+  display: inline-flex;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;  
+  border-bottom: 5px solid var(--primary-solid);
+  padding-bottom: 10px;
+  margin-inline-start: 100px;
+}
+#article1 {
+  display: flex;
+  width: 1220px;
+  height: 195px;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: var(--base-font);
+  color: var(--dark-900);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-inline-start: 100px;
+}
+/* Estilos para las imágenes miniatura */
+#miniaturas {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
 
+picture img {
+  width: 100%;
+  height: auto;
+}
+
+
+.resumen-section {
+  font-family: var(--base-font);
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 24px; 
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+  margin-inline-start: 1020px;        
+}
+
+
+.resumen-section h2 {
+  text-decoration: underline;
+}
+
+
+.resumen-section div:last-child {
+  margin-top: 20px;
+}
+#botonpagar {
+  text-align: center; 
+}
+
+#botonpagar input[type="button"] {
+  background-color: var(--primary-900); 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 2px; 
+  cursor: pointer; 
+}
