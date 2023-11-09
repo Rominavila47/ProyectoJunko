@@ -94,33 +94,32 @@
                 </li>  
             </ul>    
         </section>
-        <h2 class="listado__carrito-titulo der">RESUMEN</h2><!--hacerle el subrayado en ccs-->
+        <h1 class="listado__carrito-titulo der">RESUMEN</h1>
 
         <section class="listado__carrito-resume">             
             <article><!--tabla resumen-->
-                <div>
-                    <h3>CANTIDAD DE ELEMENTOS</h3>
-                    <p>3</p>
-                </div>
-                <div>
-                    <h3>SUBTOTAL</h3>
-                    <p>$5.399,97</p>
-                </div>
-                <div>
-                    <h3>ENVIO</h3>
-                    <p>$0,00</p>
-                </div>
-                <div> <!--agregar margen superior en ccs-->
-                    <h3><strong>TOTAL</strong></h3>
-                    <p>$5.399,97</p>
-                </div>
+                <ul class="listado__carrito-resumeul">
+                    <li>
+                        <h3>CANTIDAD DE ELEMENTOS</h3>
+                        <p>3</p>
+                    </li>
+                    <li>
+                        <h3>SUBTOTAL</h3>
+                        <p>$5.399,97</p>
+                    </li>
+                    <li>
+                        <h3>ENVIO</h3>
+                        <p>$0,00</p>
+                    </li>
+                    <li> 
+                        <h3><strong>TOTAL</strong></h3>
+                        <p>$5.399,97</p>
+                    </li>
+                </ul>                
             </article>
-            <div id="botonpagar"> <!--boton de pagar-->
-                <form action=".JS">
-                    <a href=""><input type="button" value="IR A PAGAR"></a>
-                </form>
-            </div>
         </section>
+        <button class="formulario__boton car" type="button" value="Ingresar" onclick="">IR A PAGAR</button>
+
     </main> 
     <footer class="footer">  <!--Inicio del footer-->
         <nav class="navbar container">
