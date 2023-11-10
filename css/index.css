@@ -435,7 +435,6 @@ header {
   width: 100%;
   height: var(--spacing-36);
 }
-
 .shop__buscar-inputmm {   
   display: inline-flex;
   align-items: center;
@@ -475,7 +474,6 @@ header {
   height: auto;
   width: var(--spacing-36);
   transition: all.3s ease-in-out;
-
 }
 .busqueda__boton:hover {
   background-color: var(--ligth-font-solid);
@@ -609,7 +607,6 @@ header {
   font-weight: var(--font-medium);
   line-height: normal;
 }
-
 .formulario__input {
   display: flex;
   position: left;
@@ -634,7 +631,6 @@ header {
   width: 500px;
   margin-left: 570px;
 }
-
 .formulario__boton:hover {
   background-color: var(--primary-500);  
   border-color: var(--primary-900);
@@ -660,7 +656,25 @@ header {
 }
 
 /*CREATE Y EDIT*/
+/* Estilos generales */
+.create__titulo {
+  color: var(--dark-solid);
+  text-align: start;
+  font-family: var(--alternative-font);
+  font-size: var(--font-xlarge);
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.01em;
+  padding: var(--spacing-16);
+}
+.create__form {
 
+}
+.create__form-label {
+  display: inline-flex;
+  font-size: var(--font-xxsmall);
+  font-weight: 500;
+}
 
 
 

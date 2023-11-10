@@ -23,60 +23,62 @@
             </ul>        
         </nav>
     </header> <!--Final del header-->
-    <main>
-        <section class="titleIzq"> 
-        <h1 class="tituloh1">EDITAR ITEM</h1class=>
-        </section>
-
-        <form class="createform">
-
-            <label for="categ">Categoría:</label>
+    <main class="main container">
+        <h1 class="create__titulo">EDITAR ITEM</h1class=>
+        <form class="create__form">
+        <div>
+            <label class="create__form-label" for="categ">Categoría:</label>
             <select name="categ" id="categ">
-                <option value="Figuras">Figuras</option>
+                <option value="Seleccionar">Seleccionar</option>
+                <option value="Funkos">Funkos</option>
+                <option value="Remeras">Remeras</option>
+                <option value="Llaveros">Llaveros</option>
+            </select>
+
+            <label class="create__form-label" for="license">LICENCIA:</label>
+            <select name="license" id="license">
+                <option value="Seleccionar">Seleccionar</option>
                 <option value="Star">Star wars</option>
                 <option value="Harry">Harry Potter</option>
                 <option value="Pokemon">Pokemon</option>
-            </select>
-
-            <label for="license">Licencia:</label>
-            <select name="license" id="license">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select><br>
-
-            <label for="prod_name">Nombre del producto:</label>
-            <input type="text" id="prod_name" name="prod_name" placeholder="Kakashi Hatake Shippuden Saga"><br>
+            </select> 
+        </div>
+        <div>
+            <label class="create__form-label" for="prod_name">Nombre del producto:</label>
+            <input type="text" id="prod_name" name="prod_name" placeholder="Kakashi Hatake Shippuden Saga"> 
 
             <label for="prod_desc"></label>
-            <input type="text" id="prod_desc" name="prod_desc" placeholder="Descripción del producto"><br>
-            
-            <label for="sku">Sku:</label>
+            <input type="text" id="prod_desc" name="prod_desc" placeholder="Descripción del producto"> 
+        </div>
+        <div>
+            <label class="create__form-label" for="sku">SKU:</label>
             <input type="text" id="sku" name="sku" placeholder="SSK111AB001">
 
-            <label for="price">Precio:</label>
+            <label class="create__form-label" for="price">Precio:</label>
             <input type="text" id="price" name="price" placeholder="$0.000,00">
 
-            <label for="stock">Stock:</label>
+            <label class="create__form-label" for="stock">Stock:</label>
             <input type="text" id="stock" name="stock" placeholder="0">
-
-            <label for="discou">Descuento:</label>
+        </div>
+        <div>
+            <label class="create__form-label" for="discou">Descuento:</label>
             <input type="text" id="discou" name="discou" placeholder="0%">
 
-            <label for="mpayment">Cuotas:</label>
+            <label class="create__form-label" for="mpayment">Cuotas:</label>
             <select name="mpayment" id="mpayment">
                 <option value="3cuotas">3 Cuotas sin interés</option>
                 <option value="6cuotas">6 Cuotas sin interés</option>
                 <option value="12cuotas">12 Cuotas sin interés</option>
-            </select><br>
-
-            <label for="pictures">Imágenes:</label><br> <!--falta mensaje no seleccionó ningún archivo Y BOTTON DE ADJUNTAR-->
+            </select> 
+        </div>
+            <label class="create__form-label" for="pictures">Imágenes:</label>
             <img src="../../img/star-wars/baby-yoda-1.webp" alt="frente del producto">
             <p>Frente</p>
             <img src="../../img/star-wars/baby-yoda-box.webp" alt="dorso del producto">
             <p>Dorso</p>
-            <button type="submit" value="Submit">Modificar Producto</button>
         </form>
+        <button class="formulario__boton" type="submit" value="Submit">Modificar Producto</button>
+
     </main>    
     <footer class="footer">  <!--Inicio del footer-->
         <nav class="navbar container">
