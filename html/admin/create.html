@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunkoShop.Create</title>
+    <link rel="icon" type="image/x-icon" href="../../img/branding/isotype.svg">
+    <link rel="stylesheet" href="../../css/index.css">
+</head>
+<body>
+    <header><!--Inicio del header-->
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../tienda/index.html">
+                <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca"></a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a class= "navbar__link" href="../tienda/shop.html">VER TIENDA</a></li>
+                <li class="navbar__item"><a class= "navbar__link" href="./pages/contacto.html">ADMIN</a></li>
+                <li class="navbar__item"><a class= "navbar__link" href="../admin/login.html">SALIR</a></li>
+                <li class="navbar__item"><a class= "navbar__cart" href="../tienda/car.html">
+                <img src="../../img/icons/cart-icon.svg" alt="Carrito de compras"></a></li>
+            </ul>        
+        </nav>
+    </header> <!--Final del header-->
+    <main class="main container">
+        <h1 class="create__titulo">CREAR NUEVO ITEM</h1class=>
+        <form class="create__form">
+            <div>
+                <label class="create__form-label" for="categ">Categoría:</label>
+                <select class="create__form-input" name="categ" id="categ">
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="Funkos">Funkos</option>
+                    <option value="Remeras">Remeras</option>
+                    <option value="Llaveros">Llaveros</option>
+                </select>
+    
+                <label class="create__form-label" for="license">LICENCIA:</label>
+                <select class="create__form-input" name="license" id="license">
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="Star">Star wars</option>
+                    <option value="Harry">Harry Potter</option>
+                    <option value="Pokemon">Pokemon</option>
+                </select> 
+            </div>
+            <div>
+                <label class="create__form-label" for="prod_name">Nombre del producto:</label>
+                <input class="create__form-inputp" type="text" id="prod_name" name="prod_name" placeholder="Kakashi Hatake"> 
+            </div>
+            <div>
+                <label for="prod_desc"></label>
+                <input class="create__form-inputd" type="text" id="prod_desc" name="prod_desc" placeholder="Descripción del producto"> 
+            </div>
+            <div>
+                <label class="create__form-label" for="sku">SKU:</label>
+                <input class="create__form-inputp" type="text" id="sku" name="sku" placeholder="SSK111AB001">
+    
+                <label class="create__form-label" for="price">Precio:</label>
+                <input class="create__form-inputp" type="text" id="price" name="price" placeholder="$0.000,00">
+    
+                <label class="create__form-label" for="stock">Stock:</label>
+                <input class="create__form-inputp" type="text" id="stock" name="stock" placeholder="0">
+            </div>
+            <div>
+                <label class="create__form-label" for="discou">Descuento:</label>
+                <input class="create__form-input" type="text" id="discou" name="discou" placeholder="0%">
+    
+                <label class="create__form-label" for="mpayment">Cuotas:</label>
+                <select class="create__form-input" name="mpayment" id="mpayment">
+                    <option value="3cuotas">3 Cuotas sin interés</option>
+                    <option value="6cuotas">6 Cuotas sin interés</option>
+                    <option value="12cuotas">12 Cuotas sin interés</option>
+                </select> 
+            </div>
+                <label class="create__form-label" for="pictures">Imágenes:</label>         
+                                                                                                                    
+            </form>
+        <button class="create__boton" type="button" value="Submit" onclick="">Agregar Producto</button>
+        <button class="create__boton" type="button" value="Reset" onclick="">Limpiar</button>
+    </main>
+    <footer class="footer">  <!--Inicio del footer-->
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../tienda/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/login.html">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li>                                       
+            </ul>
+            <picture class="footlogo">
+                <img src="../../img/branding/isotype.svg" alt="Imagen de Isologotipo">
+            </picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>  <!--Final del footer-->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+</html>
