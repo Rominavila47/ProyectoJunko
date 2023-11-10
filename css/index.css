@@ -696,17 +696,14 @@ header {
   height: var(--spacing-128);
 }
 .create__boton {
-  display: inline-flex;
-text-align: center;
-
-
   background-color: var(--primary-solid);
   color: var(--ligth-font-solid);
-  font-size: var(--font-xxsmall);
+  font-size: var(--spacing-16);
   font-family: var(--base-font);
+  text-align: center;
+  padding: var(--spacing-8);
   border: none;
-  margin: 0;
-  padding: var(--spacing-20);
+  margin: 0 20px 0 0;
   width: 175px;
   height: var(--spacing-36);
   cursor: pointer; 
