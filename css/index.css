@@ -703,7 +703,7 @@ header {
   text-align: center;
   padding: var(--spacing-8);
   border: none;
-  margin: 0 20px 0 0;
+  margin: var(--spacing-20) var(--spacing-24) 0 0;
   width: 175px;
   height: var(--spacing-36);
   cursor: pointer; 
@@ -712,6 +712,32 @@ header {
 .create__boton:hover {
   background-color: var(--primary-500);  
   border-color: var(--primary-900);
+}
+.create__img-sec {
+  display: inline-flex;
+  width: 100%;
+  height: auto;
+  margin: var(--spacing-12);
+  gap: var(--spacing-20);
+}
+.create__img {
+  display: inline-flex;
+  flex-flow: nowrap column;
+  place-content: center;
+  width: 150px;
+  height: 150px;
+  border: none;
+}
+.create__img p {
+  display: inline-flex;
+  font-size: var(--font-xxsmall);
+  font-weight: 500;
+  flex-flow: nowrap column;
+  align-items: center;
+  border: none;
+  border-top: solid var(--primary-solid);
+  margin: 0;
+
 }
 
 
