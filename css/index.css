@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
-
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
 :root {
  /*Palette*/
     --primary-solid:#ff3333;
@@ -258,9 +259,21 @@ header {
   font-size: var(--font-display);
   text-transform: uppercase;
 }
-.slider__items {
+/*.slider__items {
   display: flex;
   gap:var(--spacing-24);
+}*/
+
+iconify-icon {
+  color: var(--dark-bg-solid);
+  font-size: var(--font-small);
+  font-weight: 700;
+}
+.glide__arrow--left {
+  left : 0;
+}
+.glide__arrow--right {
+  right: 0;
 }
 .card-item__cover {
   display: flex;
@@ -398,7 +411,7 @@ header {
 .items {
   padding: var(--spacing-16);
 }
-.item__units {
+.item__cart {
   display: flex;
   justify-content: space-between;
   align-items: center;
