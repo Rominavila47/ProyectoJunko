@@ -259,10 +259,10 @@ header {
   font-size: var(--font-display);
   text-transform: uppercase;
 }
-/*.slider__items {
+.slider__items1 {
   display: flex;
   gap:var(--spacing-24);
-}*/
+}
 
 iconify-icon {
   color: var(--dark-bg-solid);
