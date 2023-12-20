@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunkoShop.Create</title>
-    <link rel="icon" type="image/x-icon" href="../../img/branding/isotype.svg">
-    <link rel="stylesheet" href="../../css/index.css">
-</head>
-<body>
-    <header><!--Inicio del header-->
-        <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="../tienda/index.html">
-                <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca"></a>
-            </picture>
-            <ul class="navbar__menu">
-                <li class="navbar__item"><a class= "navbar__link" href="../tienda/shop.html">VER TIENDA</a></li>
-                <li class="navbar__item"><a class= "navbar__link" href="./pages/contacto.html">ADMIN</a></li>
-                <li class="navbar__item"><a class= "navbar__link" href="../admin/login.html">SALIR</a></li>
-                <li class="navbar__item"><a class= "navbar__cart" href="../tienda/car.html">
-                <img src="../../img/icons/cart-icon.svg" alt="Carrito de compras"></a></li>
-            </ul>        
-        </nav>
-    </header> <!--Final del header-->
+<%- include('../partials/header') %>
     <main class="main container">
         <h1 class="create__titulo">CREAR NUEVO ITEM</h1class=>
         <form class="create__form">
@@ -78,25 +54,7 @@
         <button class="create__boton" type="button" value="Submit" onclick="">Agregar Producto</button>
         <button class="create__boton" type="button" value="Reset" onclick="">Limpiar</button>
     </main>
-    <footer class="footer">  <!--Inicio del footer-->
-        <nav class="navbar container">
-            <ul class="navbar__item">
-                <li class="navbar__item">
-                    <a class="navbar__link" href="../tienda/shop.html">SHOP</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="../admin/login.html">INGRESAR</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
-                </li>                                       
-            </ul>
-            <picture class="footlogo">
-                <img src="../../img/branding/isotype.svg" alt="Imagen de Isologotipo">
-            </picture>
-        </nav>
-        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer>  <!--Final del footer-->
+    <%- include('../partials/footer') %>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>

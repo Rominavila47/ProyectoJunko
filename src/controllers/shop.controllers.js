@@ -1,11 +1,21 @@
 const path = require('path');
 
 module.exports = {
-    getShop: (req, res) => {
-        res.render(path.resolve(__dirname, '../views/shop/shop.ejs'));        
+    shopView: (req, res) => {
+        res.render(path.resolve(__dirname, '../views/shop/shop.ejs'), {
+            title: "Tienda",
+        });        
     },
-    getShopItem: (req, res) => res.send('Esta es la vista de ITEM SELECCIONADO'),
+    shopItemView: (req, res) => {
+        res.render(path.resolve(__dirname, '../views/shop/item.ejs'), {
+            title: "Item",
+        });        
+    },
     addItem: (req, res) => res.send('Esta es la ruta para AGREGAR un NUEVO ITEM'),
-    car: (req, res) => res.send('Esta es la vista del CARRITO'),
-    addCar: (req, res) => res.send('Esta es la ruta para AGREGAR un NUEVO ITEM al CARRITO')
+    carView: (req, res) =>  {
+        res.render(path.resolve(__dirname, '../views/shop/car.ejs'), {
+            title: "Carrito de compras",
+        });        
+    },
+    addToCar: (req, res) => res.send('Esta es la ruta para AGREGAR un NUEVO ITEM al CARRITO')
 }
