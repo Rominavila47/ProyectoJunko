@@ -2,8 +2,8 @@
     <main class="main container">
         <section class="collection">                         
             <picture class="card-item__cover">
-                <img class="card-item__img--front" src="<%= item.img_front %>" alt="<%= item.product__descripcion %>">
-                <img class="card-item__img--back" src="<%= item.img_back %>" alt="<%= item.product__descripcion %>">
+                <img class="card-item__img--front" src="/img/<%= item.img_front %>" alt="<%= item.product__descripcion %>">
+                <img class="card-item__img--back" src="/img/<%= item.img_back %>" alt="<%= item.product__descripcion %>">
             </picture>
             <article class="collection__content items">
                 <p><%= item.licence_name %></p>
@@ -42,7 +42,7 @@
                     </li>
                     <li class="slider__item glide__slide">
                         <article class="card-item">
-                            <a class="card-item__link" href="">
+                            <a class="card-item__link" href="/shop/item">
                                 <picture class="card-item__cover">
                                     <span class="card-item__tag">Nuevo</span>
                                     <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable del Pidgeotto">

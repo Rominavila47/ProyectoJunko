@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './src/views'));
 
 /*Parsea los datos recibidos por Post */
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 /* Override para habilitar métodos Put y Delete */

@@ -263,8 +263,11 @@ header {
   text-transform: uppercase;
 }
 .slider__items1 {
-  display: flex;
-  gap:var(--spacing-24);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: var(--spacing-24);
+  list-style: none; 
+  padding: 0;
 }
 
 iconify-icon {

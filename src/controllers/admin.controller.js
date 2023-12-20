@@ -1,9 +1,13 @@
 const path = require('path');
+const { getAll, getOne } = require('../models/product.model');
 
 module.exports = {
-    adminView: (req, res) => {
+    adminView: async (req, res) => {
+
+        const data = await getAll();
         res.render(path.resolve(__dirname, '../views/admin/Administrador.ejs'), {
             title: "Admin",
+            data
         });        
     },
     createView: (req, res) => {
@@ -12,9 +16,14 @@ module.exports = {
         });        
     },
     addNewItem:  (req, res) => res.send('Esta es la ruta para AGREGAR un NUEVO ITEM'),
-    editIdView: (req, res) => {
+
+    editIdView: async (req, res) => {
+        const { id } = req.params;
+        const [product] = await getOne(id);
+
         res.render(path.resolve(__dirname, '../views/admin/edit.ejs'), {
             title: "Editar Item",
+            product
         });        
     },
     modfItem: (req, res) => res.send('Esta es la ruta para MODIFICAR un ITEM'),

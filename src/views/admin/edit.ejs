@@ -21,25 +21,25 @@
             </div>
             <div>
                 <label class="create__form-label" for="prod_name">Nombre del producto:</label>
-                <input class="create__form-inputp" type="text" id="prod_name" name="prod_name" placeholder="Kakashi Hatake"> 
+                <input class="create__form-inputp" type="text" id="prod_name" name="prod_name" value="<%= product.product_name %>"> 
             </div>
             <div>
                 <label for="prod_desc"></label>
-                <input class="create__form-inputd" type="text" id="prod_desc" name="prod_desc" placeholder="Descripción del producto"> 
+                <input class="create__form-inputd" type="text" id="prod_desc" name="prod_desc" value="<%= product.product_description %>"> 
             </div>
             <div>
                 <label class="create__form-label" for="sku">SKU:</label>
-                <input class="create__form-inputp" type="text" id="sku" name="sku" placeholder="SSK111AB001">
+                <input class="create__form-inputp" type="text" id="sku" name="sku" value="<%= product.sku %>">
 
                 <label class="create__form-label" for="price">Precio:</label>
-                <input class="create__form-inputp" type="text" id="price" name="price" placeholder="$0.000,00">
+                <input class="create__form-inputp" type="text" id="price" name="price" value="$ <%= product.product_price %>">
 
                 <label class="create__form-label" for="stock">Stock:</label>
-                <input class="create__form-inputp" type="text" id="stock" name="stock" placeholder="0">
+                <input class="create__form-inputp" type="text" id="stock" name="stock" value="<%= product.stock %>">
             </div>
             <div>
                 <label class="create__form-label" for="discou">Descuento:</label>
-                <input class="create__form-input" type="text" id="discou" name="discou" placeholder="0%">
+                <input class="create__form-input" type="text" id="discou" name="discou" value="% <%= product.discount %>">
 
                 <label class="create__form-label" for="mpayment">Cuotas:</label>
                 <select class="create__form-input" name="mpayment" id="mpayment">
@@ -51,11 +51,11 @@
             <label class="create__form-label" for="pictures">Imágenes:</label>
             <section class="create__img-sec">
                 <div class="create__img">
-                    <img src="../../img/star-wars/baby-yoda-1.webp" alt="frente del producto">
+                    <img src="/img<%= product.img_front %>" alt="frente del producto">
                     <p >Frente</p>
                 </div>
                 <div class="create__img">   
-                    <img src="../../img/star-wars/baby-yoda-box.webp" alt="dorso del producto">
+                    <img src="/img<%= product.img_back %>" alt="dorso del producto">
                     <p >Dorso</p>
                 </div>
             </section>
