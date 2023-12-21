@@ -1,22 +1,22 @@
 <%- include('../partials/header') %>
     <main class="main container">
         <h1 class="create__titulo">EDITAR ITEM</h1>
-        <form class="create__form" action="/admin/create" method="POST" enctype="multipart/form-data">
+        <form class="create__form" action="/admin/edit" method="POST" enctype="multipart/form-data">
             <div>
-                <label class="create__form-label" for="categ">Categoría:</label>
-                <select class="create__form-input" name="categ" id="categ">
-                    <option value="Seleccionar">Seleccionar</option>
-                    <option value="Funkos">Funkos</option>
-                    <option value="Remeras">Remeras</option>
-                    <option value="Llaveros">Llaveros</option>
+                <label class="create__form-label" for="category">Categoría:</label>
+                <select class="create__form-input" name="category" id="category">
+                    <option value="">Seleccionar</option>
+                    <option value="1">Funkos</option>
+                    <option value="3">Remeras</option>
+                    <option value="2">Llaveros</option>
                 </select>
 
-                <label class="create__form-label" for="license">Licencia:</label>
-                <select class="create__form-input" name="license" id="license">
-                    <option value="Seleccionar">Seleccionar</option>
-                    <option value="Star">Star wars</option>
-                    <option value="Harry">Harry Potter</option>
-                    <option value="Pokemon">Pokemon</option>
+                <label class="create__form-label" for="licence">Licencia:</label>
+                <select class="create__form-input" name="licence" id="licence">
+                    <option value="">Seleccionar</option>
+                    <option value="2">Star wars</option>
+                    <option value="3">Harry Potter</option>
+                    <option value="1">Pokemon</option>
                 </select> 
             </div>
             <div>
@@ -32,7 +32,7 @@
                 <input class="create__form-inputp" type="text" id="sku" name="sku" value="<%= product.sku %>">
 
                 <label class="create__form-label" for="price">Precio:</label>
-                <input class="create__form-inputp" type="text" id="price" name="price" value="$ <%= product.product_price %>">
+                <input class="create__form-inputp" type="text" id="price" name="price" value="$ <%= product.price %>">
 
                 <label class="create__form-label" for="stock">Stock:</label>
                 <input class="create__form-inputp" type="text" id="stock" name="stock" value="<%= product.stock %>">
@@ -64,8 +64,8 @@
                 </div>
             </section>
             <div>
-                <input class="create__boton" type="Submit" value="Modificar Producto"></input>
-                <input class="create__boton" type="Reset" value="Limpiar"></input>
+                <input class="create__boton" type="Submit" value="Modificar Producto"/>
+                <input class="create__boton" type="Reset" value="Limpiar"/>
         
             </div>
         </form>

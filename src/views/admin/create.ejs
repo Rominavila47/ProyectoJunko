@@ -3,43 +3,43 @@
         <h1 class="create__titulo">CREAR NUEVO ITEM</h1>
         <form class="create__form" action="/admin/create" method="POST" enctype="multipart/form-data">
             <div>
-                <label class="create__form-label" for="categ">Categoría:</label>
-                <select class="create__form-input" name="categ" id="categ">
-                    <option value="Seleccionar">Seleccionar</option>
-                    <option value="Funkos">Funkos</option>
-                    <option value="Remeras">Remeras</option>
-                    <option value="Llaveros">Llaveros</option>
+                <label class="create__form-label" for="category">Categoría:</label>
+                <select class="create__form-input" name="category" id="category" required>
+                    <option value="">Seleccionar</option>
+                    <option value="1">Funkos</option>
+                    <option value="3">Remeras</option>
+                    <option value="2">Llaveros</option>
                 </select>
     
-                <label class="create__form-label" for="license">Licencia:</label>
-                <select class="create__form-input" name="license" id="license">
-                    <option value="Seleccionar">Seleccionar</option>
-                    <option value="Star">Star wars</option>
-                    <option value="Harry">Harry Potter</option>
-                    <option value="Pokemon">Pokemon</option>
+                <label class="create__form-label" for="licence">Licencia:</label>
+                <select class="create__form-input" name="licence" id="licence" required>
+                    <option value="">Seleccionar</option>
+                    <option value="2">Star wars</option>
+                    <option value="3">Harry Potter</option>
+                    <option value="1">Pokemon</option>
                 </select> 
             </div>
             <div>
                 <label class="create__form-label" for="prod_name">Nombre del producto:</label>
-                <input class="create__form-inputp" type="text" id="prod_name" name="prod_name" placeholder="Kakashi Hatake"> 
+                <input class="create__form-inputp" type="text" id="prod_name" name="prod_name" value="<%= product.product_name %>"/> 
             </div>
             <div>
                 <label for="prod_desc"></label>
-                <input class="create__form-inputd" type="text" id="prod_desc" name="prod_desc" placeholder="Descripción del producto"> 
+                <input class="create__form-inputd" type="text" id="prod_desc" name="prod_desc" value="<%= product.product_description %>"/> 
             </div>
             <div>
                 <label class="create__form-label" for="sku">SKU:</label>
-                <input class="create__form-inputp" type="text" id="sku" name="sku" placeholder="SSK111AB001">
-    
+                <input class="create__form-inputp" type="text" id="sku" name="sku" value="<%= product.sku %>"/>
+
                 <label class="create__form-label" for="price">Precio:</label>
-                <input class="create__form-inputp" type="text" id="price" name="price" placeholder="$0.000,00">
-    
+                <input class="create__form-inputp" type="text" id="price" name="price" value="$ <%= product.price %>"/>
+
                 <label class="create__form-label" for="stock">Stock:</label>
-                <input class="create__form-inputp" type="text" id="stock" name="stock" placeholder="0">
+                <input class="create__form-inputp" type="text" id="stock" name="stock" value="<%= product.stock %>"/>
             </div>
             <div>
                 <label class="create__form-label" for="discou">Descuento:</label>
-                <input class="create__form-input" type="text" id="discou" name="discou" placeholder="0%">
+                <input class="create__form-input" type="text" id="discou" name="discou" value="% <%= product.discount %>"/>
     
                 <label class="create__form-label" for="mpayment">Cuotas:</label>
                 <select class="create__form-input" name="mpayment" id="mpayment">
@@ -50,13 +50,12 @@
             </div>
             <div>
                 <label class="create__form-label" for="pictures">Imágenes:</label>         
-                <input type="file" name="images" id="img" multiple></input>                                                                                                    
+                <input type="file" name="images" id="img" multiple/>                                                                                                  
             </div>
             <div>            
                 <input class="create__boton" type="Submit" value="Agregar Producto"/>
                 <input class="create__boton" type="Reset" value="Limpiar"/>
-            </div>
-    
+            </div>    
         </form>
     </main>
     <%- include('../partials/footer') %>

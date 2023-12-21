@@ -423,6 +423,28 @@ iconify-icon {
   align-items: center;
   height: var(--spacing-36);
 }
+.item__quantity {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.item__input {
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 30px;
+  line-height: 30px;
+}
 /*SHOP*/
 .shop {
   display: grid;

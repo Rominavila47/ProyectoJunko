@@ -2,14 +2,14 @@
     <main class="main container">
         <section class="collection">                         
             <picture class="card-item__cover">
-                <img class="card-item__img--front" src="/img/<%= item.img_front %>" alt="<%= item.product__descripcion %>">
-                <img class="card-item__img--back" src="/img/<%= item.img_back %>" alt="<%= item.product__descripcion %>">
+                <img class="card-item__img--front" src="/img<%= item.img_front %>" alt="<%= item.product__descripcion %>">
+                <img class="card-item__img--back" src="/img<%= item.img_back %>" alt="<%= item.product__descripcion %>">
             </picture>
             <article class="collection__content items">
                 <p><%= item.licence_name %></p>
                 <h3 class="collection__title"><%= item.product_name %></h3>
                 <p><%= item.product_description %></p>
-                <p>$ <%= item.product_price %> .-</p>
+                <p>$ <%= item.price %> .-</p>
                 <div class="item__cart">
                     <button id="subtrac" class="item__quantity" type="button">-</button>
                     <input class="item__input" type="text" id="quantity" name="quantity" placeholder="0">

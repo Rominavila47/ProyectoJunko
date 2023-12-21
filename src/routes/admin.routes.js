@@ -10,8 +10,6 @@ const {adminView,
     deleteItem
 } = require('../controllers/admin.controller');
 
-
-
 router.get('/', adminView);
 router.get('/create', createView);
 router.post('/create', upload.array('images', 2), addNewItem);
