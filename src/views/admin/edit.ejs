@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
     <main class="main container">
-        <h1 class="create__titulo">EDITAR ITEM</h1class=>
-        <form class="create__form">
+        <h1 class="create__titulo">EDITAR ITEM</h1>
+        <form class="create__form" action="/admin/create" method="POST" enctype="multipart/form-data">
             <div>
                 <label class="create__form-label" for="categ">Categoría:</label>
                 <select class="create__form-input" name="categ" id="categ">
@@ -11,7 +11,7 @@
                     <option value="Llaveros">Llaveros</option>
                 </select>
 
-                <label class="create__form-label" for="license">LICENCIA:</label>
+                <label class="create__form-label" for="license">Licencia:</label>
                 <select class="create__form-input" name="license" id="license">
                     <option value="Seleccionar">Seleccionar</option>
                     <option value="Star">Star wars</option>
@@ -48,7 +48,11 @@
                     <option value="12cuotas">12 Cuotas sin interés</option>
                 </select> 
             </div>
-            <label class="create__form-label" for="pictures">Imágenes:</label>
+            <div>
+                <label class="create__form-label" for="pictures">Imágenes:</label>         
+                <input type="file" name="images" id="img" multiple></input>                                                                                                    
+            </div>
+
             <section class="create__img-sec">
                 <div class="create__img">
                     <img src="/img<%= product.img_front %>" alt="frente del producto">
@@ -59,9 +63,12 @@
                     <p >Dorso</p>
                 </div>
             </section>
+            <div>
+                <input class="create__boton" type="Submit" value="Modificar Producto"></input>
+                <input class="create__boton" type="Reset" value="Limpiar"></input>
+        
+            </div>
         </form>
-        <button class="create__boton" type="submit" value="Submit">Modificar Producto</button>
-        <button class="create__boton" type="submit" value="Submit">Limpiar Producto</button>
 
     </main>    
     <%- include('../partials/footer') %>

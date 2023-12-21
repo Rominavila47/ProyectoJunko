@@ -1,13 +1,22 @@
 const express = require('express');
 const router = express.Router();
+const upload = require('../middlewares/uploadFile');
 
-const controller = require('../controllers/admin.controller');
+const {adminView,
+    createView,
+    addNewItem,
+    editIdView,
+    modfItem,
+    deleteItem
+} = require('../controllers/admin.controller');
 
-router.get('/', controller.adminView);
-router.get('/create', controller.createView);
-router.post('/create', controller.addNewItem);
-router.get('/edit/:id', controller.editIdView);
-router.put('/edit/:id', controller.modfItem);
-router.delete('/delete/:id', controller.deleteItem);
+
+
+router.get('/', adminView);
+router.get('/create', createView);
+router.post('/create', upload.array('images', 2), addNewItem);
+router.get('/edit/:id', editIdView);
+router.put('/edit/:id', modfItem);
+router.delete('/delete/:id', deleteItem);
 
 module.exports = router;

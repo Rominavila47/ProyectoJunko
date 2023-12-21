@@ -19,7 +19,7 @@ module.exports = {
 
     editIdView: async (req, res) => {
         const { id } = req.params;
-        const [product] = await getOne(id);
+        const [product] = await getOne({ product_id: id});
 
         res.render(path.resolve(__dirname, '../views/admin/edit.ejs'), {
             title: "Editar Item",

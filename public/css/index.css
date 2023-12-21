@@ -695,7 +695,7 @@ iconify-icon {
 }
 .create__form-label {
   display: inline-flex;
-  font-size: var(--font-xxsmall);
+  font-size: var(--font-small);
   font-weight: 500;
 }
 .create__form-input {

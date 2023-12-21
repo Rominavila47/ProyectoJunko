@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
     <main class="main container">
-        <h1 class="create__titulo">CREAR NUEVO ITEM</h1class=>
-        <form class="create__form">
+        <h1 class="create__titulo">CREAR NUEVO ITEM</h1>
+        <form class="create__form" action="/admin/create" method="POST" enctype="multipart/form-data">
             <div>
                 <label class="create__form-label" for="categ">Categoría:</label>
                 <select class="create__form-input" name="categ" id="categ">
@@ -11,7 +11,7 @@
                     <option value="Llaveros">Llaveros</option>
                 </select>
     
-                <label class="create__form-label" for="license">LICENCIA:</label>
+                <label class="create__form-label" for="license">Licencia:</label>
                 <select class="create__form-input" name="license" id="license">
                     <option value="Seleccionar">Seleccionar</option>
                     <option value="Star">Star wars</option>
@@ -48,11 +48,16 @@
                     <option value="12cuotas">12 Cuotas sin interés</option>
                 </select> 
             </div>
+            <div>
                 <label class="create__form-label" for="pictures">Imágenes:</label>         
-                                                                                                                    
-            </form>
-        <button class="create__boton" type="button" value="Submit" onclick="">Agregar Producto</button>
-        <button class="create__boton" type="button" value="Reset" onclick="">Limpiar</button>
+                <input type="file" name="images" id="img" multiple></input>                                                                                                    
+            </div>
+            <div>            
+                <input class="create__boton" type="Submit" value="Agregar Producto"/>
+                <input class="create__boton" type="Reset" value="Limpiar"/>
+            </div>
+    
+        </form>
     </main>
     <%- include('../partials/footer') %>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
