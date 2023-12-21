@@ -2,9 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const methodOverride = require('method-override');
-/*
-const {initSession} = require('./src/util/sessions');
-requiere('dotenv').config();*/
+const {initSession} = require('./src/middlewares/sessions');
+/*requiere('dotenv').config();*/
 
 /*Routes Imports*/
 const mainRoutes = require('./src/routes/main.routes');
@@ -28,6 +27,9 @@ app.use(express.json());
 /* Override para habilitar métodos Put y Delete */
 app.use(methodOverride('_method'));
 
+/* Crear sesión de usuario */
+app.use(initSession());
+
 /* Rutas de la aplicación */
 app.use('/', mainRoutes);
 app.use('/auth', authRoutes);
@@ -35,4 +37,4 @@ app.use('/shop', shopRoutes);
 app.use('/admin', adminRoutes);
 
 
-app.listen(PORT, () => console.log('Servidor corriendo en http://localhost:${PORT}'));
+app.listen(PORT, () => console.log(`Servidor corriendo en http://localhost:${PORT}`));

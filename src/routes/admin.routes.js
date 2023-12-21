@@ -10,6 +10,10 @@ const {adminView,
     deleteItem
 } = require('../controllers/admin.controller');
 
+/*const isLogged = (req, res, next) => {
+    if (req.session)
+}*/
+
 router.get('/', adminView);
 router.get('/create', createView);
 router.post('/create', upload.array('images', 2), createItem);

@@ -3,16 +3,16 @@
         <h1 class="create__titulo">CREAR NUEVO ITEM</h1>
         <form class="create__form" action="/admin/create" method="POST" enctype="multipart/form-data">
             <div>
-                <label class="create__form-label" for="category">Categoría:</label>
-                <select class="create__form-input" name="category" id="category" required>
+                <label class="create__form-label" for="category_id">Categoría:</label>
+                <select class="create__form-input" name="category_id" id="category_id" required>
                     <option value="">Seleccionar</option>
                     <option value="1">Funkos</option>
                     <option value="3">Remeras</option>
                     <option value="2">Llaveros</option>
                 </select>
     
-                <label class="create__form-label" for="licence">Licencia:</label>
-                <select class="create__form-input" name="licence" id="licence" required>
+                <label class="create__form-label" for="licence_id">Licencia:</label>
+                <select class="create__form-input" name="licence_id" id="licence_id" required>
                     <option value="">Seleccionar</option>
                     <option value="2">Star wars</option>
                     <option value="3">Harry Potter</option>
@@ -41,16 +41,16 @@
                     <label class="create__form-label" for="discount">Descuento:</label>
                     <input class="create__form-input" type="text" id="discount" name="discount" placeholder="0%">
                         
-                    <label class="create__form-label" for="mpayment">Cuotas:</label>
-                    <select class="create__form-input" name="mpayment" id="mpayment">
-                        <option value="3cuotas">3 Cuotas sin interés</option>
-                        <option value="6cuotas">6 Cuotas sin interés</option>
-                        <option value="12cuotas">12 Cuotas sin interés</option>
+                    <label class="create__form-label" for="dues">Cuotas:</label>
+                    <select class="create__form-input" name="dues" id="dues">
+                        <option value="3">3 Cuotas sin interés</option>
+                        <option value="6">6 Cuotas sin interés</option>
+                        <option value="12">12 Cuotas sin interés</option>
                     </select> 
                 </div>
                 <div>
-                    <label class="create__form-label" for="pictures">Imágenes:</label>         
-                    <input type="file" name="images" id="img" multiple/>                                                                                                  
+                    <label class="create__form-label" for="images">Imágenes:</label>         
+                    <input type="file" name="images" id="images" multiple/>                                                                                                  
                 </div>
                 <div>            
                     <input class="create__boton" type="Submit" value="Agregar Producto"/>
