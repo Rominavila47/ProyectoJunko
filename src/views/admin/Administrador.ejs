@@ -26,10 +26,13 @@
                             <td><%= product.sku %></td>
                             <td><%= product.product_name %></td>
                             <td><%= product.category_name %></td>
-                            <td> <a class="Editar" href="/admin/edit/<%= product.product_id %>"><img class="Editar" src="../../img/icons/edit_pencil.svg" alt=""></a> </td>
-                            <td> <a class="Borrar" href="/admin/edit/<%= product.product_id %>"><img class="Borrar" src="../../img/icons/delete_trash.svg" alt=""></a></td>
+                            <td><a class="Editar" href="/admin/edit/<%= product.product_id %>"><img class="Editar" src="../../img/icons/edit_pencil.svg" alt=""></a> </td>
+                            <td><form action="/admin/delete/<%= product.product_id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded">
+                                 <button class="Borrar" type="submit"><img class="Borrar" src="../../img/icons/delete_trash.svg" alt=""/></button>
+                                </form>
+                            </td>
                         </tr>
-                    <% }) %>
+                    <% }); %>
                 </tbody>
             </table>
         </section>

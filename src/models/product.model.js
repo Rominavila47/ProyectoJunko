@@ -13,9 +13,9 @@ const getAll = async () => {
         conn.releaseConnection();
     }
 }
-const getOne = async (param) => {
+const getOne = async (params) => {
     try {
-    const [rows] =  await conn.query(`SELECT product.*, category.category_name, licence.licence_name FROM (product LEFT JOIN category ON product.category_id = category.category_id) LEFT JOIN licence ON product.licence_id = licence.licence_id WHERE ?;`, param);
+    const [rows] =  await conn.query(`SELECT product.*, category.category_name, licence.licence_name FROM (product LEFT JOIN category ON product.category_id = category.category_id) LEFT JOIN licence ON product.licence_id = licence.licence_id WHERE ?;`, params);
     return rows;
     } catch (error) {
         return {
@@ -41,8 +41,38 @@ const create = async (params) => {
     }
 }
 
+const edit = async (params, id) => {
+    try {
+        const [product] = await conn.query('UPDATE product SET ? WHERE?;', [params, id]);
+        return product;
+    } catch (error) {
+        return {
+            error: true,
+            message: 'Hemos encontrado un error: ' + error
+        }
+    } finally {
+        conn.releaseConnection();
+    }
+}
+
+const deleteOne = async (params) => {
+    try {
+        const [product] = await conn.query('DELETE FROM product WHERE ?;', params );
+        return product;
+    } catch (error) {
+        return {
+            error: true,
+            message: 'Hemos encontrado un error: ' + error
+        }
+    } finally {
+        conn.releaseConnection();
+    }
+}
+
 module.exports = {
     getAll,
     getOne,
-    create
+    create,
+    edit,
+    deleteOne
 }

@@ -4,17 +4,17 @@ const upload = require('../middlewares/uploadFile');
 
 const {adminView,
     createView,
-    addNewItem,
+    createItem,
     editIdView,
-    modfItem,
+    editItem,
     deleteItem
 } = require('../controllers/admin.controller');
 
 router.get('/', adminView);
 router.get('/create', createView);
-router.post('/create', upload.array('images', 2), addNewItem);
+router.post('/create', upload.array('images', 2), createItem);
 router.get('/edit/:id', editIdView);
-router.put('/edit/:id', modfItem);
+router.put('/edit/:id', upload.array('images', 2), editItem);
 router.delete('/delete/:id', deleteItem);
 
 module.exports = router;

@@ -22,6 +22,7 @@ module.exports = {
     },
 
     addItem: (req, res) => res.send('Esta es la ruta para AGREGAR un NUEVO ITEM'),
+    
     carView: (req, res) =>  {
         res.render(path.resolve(__dirname, '../views/shop/car.ejs'), {
             title: "Carrito de compras",

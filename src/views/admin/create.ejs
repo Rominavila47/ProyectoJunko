@@ -19,43 +19,43 @@
                     <option value="1">Pokemon</option>
                 </select> 
             </div>
-            <div>
-                <label class="create__form-label" for="prod_name">Nombre del producto:</label>
-                <input class="create__form-inputp" type="text" id="prod_name" name="prod_name" value="<%= product.product_name %>"/> 
-            </div>
-            <div>
-                <label for="prod_desc"></label>
-                <input class="create__form-inputd" type="text" id="prod_desc" name="prod_desc" value="<%= product.product_description %>"/> 
-            </div>
-            <div>
-                <label class="create__form-label" for="sku">SKU:</label>
-                <input class="create__form-inputp" type="text" id="sku" name="sku" value="<%= product.sku %>"/>
-
-                <label class="create__form-label" for="price">Precio:</label>
-                <input class="create__form-inputp" type="text" id="price" name="price" value="$ <%= product.price %>"/>
-
-                <label class="create__form-label" for="stock">Stock:</label>
-                <input class="create__form-inputp" type="text" id="stock" name="stock" value="<%= product.stock %>"/>
-            </div>
-            <div>
-                <label class="create__form-label" for="discou">Descuento:</label>
-                <input class="create__form-input" type="text" id="discou" name="discou" value="% <%= product.discount %>"/>
-    
-                <label class="create__form-label" for="mpayment">Cuotas:</label>
-                <select class="create__form-input" name="mpayment" id="mpayment">
-                    <option value="3cuotas">3 Cuotas sin interés</option>
-                    <option value="6cuotas">6 Cuotas sin interés</option>
-                    <option value="12cuotas">12 Cuotas sin interés</option>
-                </select> 
-            </div>
-            <div>
-                <label class="create__form-label" for="pictures">Imágenes:</label>         
-                <input type="file" name="images" id="img" multiple/>                                                                                                  
-            </div>
-            <div>            
-                <input class="create__boton" type="Submit" value="Agregar Producto"/>
-                <input class="create__boton" type="Reset" value="Limpiar"/>
-            </div>    
+                <div>
+                    <label class="create__form-label" for="product_name">Nombre del producto:</label>
+                    <input class="create__form-inputp" type="text" id="product_name" name="product_name" placeholder="Kakashi Hatake"> 
+                </div>
+                <div>
+                    <label for="product_description"></label>
+                    <input class="create__form-inputd" type="text" id="product_description" name="product_description" placeholder="Descripción del producto"> 
+                </div>
+                <div>
+                    <label class="create__form-label" for="sku">SKU:</label>
+                    <input class="create__form-inputp" type="text" id="sku" name="sku" placeholder="SSK111AB001">
+        
+                    <label class="create__form-label" for="price">Precio:</label>
+                    <input class="create__form-inputp" type="text" id="price" name="price" placeholder="$0.000,00">
+        
+                    <label class="create__form-label" for="stock">Stock:</label>
+                    <input class="create__form-inputp" type="text" id="stock" name="stock" placeholder="0">
+                </div>
+                <div>
+                    <label class="create__form-label" for="discount">Descuento:</label>
+                    <input class="create__form-input" type="text" id="discount" name="discount" placeholder="0%">
+                        
+                    <label class="create__form-label" for="mpayment">Cuotas:</label>
+                    <select class="create__form-input" name="mpayment" id="mpayment">
+                        <option value="3cuotas">3 Cuotas sin interés</option>
+                        <option value="6cuotas">6 Cuotas sin interés</option>
+                        <option value="12cuotas">12 Cuotas sin interés</option>
+                    </select> 
+                </div>
+                <div>
+                    <label class="create__form-label" for="pictures">Imágenes:</label>         
+                    <input type="file" name="images" id="img" multiple/>                                                                                                  
+                </div>
+                <div>            
+                    <input class="create__boton" type="Submit" value="Agregar Producto"/>
+                    <input class="create__boton" type="Reset" value="Limpiar"/>
+                </div>    
         </form>
     </main>
     <%- include('../partials/footer') %>
